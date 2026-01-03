@@ -20,7 +20,9 @@ export const stemAchievementsData: DataPackage = {
       picture: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Katherine_Johnson_1983.jpg',
       tags: ['mathematics', 'physics', 'nasa', 'space-exploration', 'african-american'],
       groupMemberships: ['nasa-mathematics', 'african-american-scientists'],
-      reference: 'https://www.nasa.gov/content/katherine-johnson-biography'
+      reference: 'https://www.nasa.gov/content/katherine-johnson-biography',
+      quote: 'I counted everything. I counted the steps to the road, the steps up to church, the number of dishes and silverware I washed … anything that could be counted, I did.',
+      quoteReference: 'https://www.nasa.gov/image-article/katherine-johnson-at-work-1962/'
     },
     {
       id: 'chien-shiung-wu',
@@ -37,7 +39,9 @@ export const stemAchievementsData: DataPackage = {
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d2/Chien-shiung_Wu_%281912-1997%29_C.jpg',
       tags: ['physics', 'nuclear-physics', 'experimental-physics', 'asian-american', 'nobel-prize'],
       groupMemberships: ['columbia-physics', 'experimental-physicists'],
-      reference: 'https://www.nobelprize.org/prizes/physics/1957/summary/'
+      reference: 'https://www.britannica.com/biography/Chien-Shiung-Wu',
+      quote: 'There is only one thing worse than coming home from the lab to a sink full of dirty dishes, and that is not going to the lab at all!',
+      quoteReference: 'https://todayinsci.com/W/Wu_ChienShiung/WuChienShiung-Quotations.htm'
     },
     {
       id: 'ada-lovelace',
@@ -52,7 +56,7 @@ export const stemAchievementsData: DataPackage = {
       groupMemberships: ['computer-pioneers', 'mathematical-history'],
       reference: 'https://www.britannica.com/biography/Ada-Lovelace',
       quote: 'The Analytical Engine weaves algebraical patterns just as the Jacquard-loom weaves flowers and leaves.',
-      quoteReference: 'Notes by the Translator on the Memoir "Sketch of the Analytical Engine" (1843)'
+      quoteReference: 'https://psychclassics.yorku.ca/Lovelace/lovelace.htm'
     },
     {
       id: 'marie-curie',
@@ -70,7 +74,8 @@ export const stemAchievementsData: DataPackage = {
       tags: ['physics', 'chemistry', 'radioactivity', 'nobel-prize', 'polish-french'],
       groupMemberships: ['sorbonne-physics', 'radioactivity-research'],
       reference: 'https://www.nobelprize.org/prizes/physics/1903/curie/facts/',
-      quote: 'Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.'
+      quote: 'Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.',
+      quoteReference: 'https://www.brainyquote.com/quotes/marie_curie_389010'
     },
     {
       id: 'dorothy-vaughan',
@@ -82,7 +87,9 @@ export const stemAchievementsData: DataPackage = {
       phone: '+1-555-864-1000',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Dorothy_Vaughan_2.jpg',
       tags: ['mathematics', 'computer-science', 'nasa', 'african-american', 'leadership'],
-      groupMemberships: ['nasa-mathematics', 'west-area-computing']
+      groupMemberships: ['nasa-mathematics', 'west-area-computing'],
+      quote: 'I changed what I could, and what I couldn\'t, I endured.',
+      quoteReference: 'https://www.nasa.gov/people/dorothy-vaughan/'
     },
     {
       id: 'grace-hopper',
@@ -94,7 +101,9 @@ export const stemAchievementsData: DataPackage = {
       phone: '+1-555-697-0211',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/3/37/Grace_Hopper_and_UNIVAC.jpg',
       tags: ['computer-science', 'programming', 'navy', 'cobol', 'compiler'],
-      groupMemberships: ['navy-computing', 'programming-pioneers']
+      groupMemberships: ['navy-computing', 'programming-pioneers'],
+      quote: 'It\'s easier to ask forgiveness than it is to get permission.',
+      quoteReference: 'https://www.oxfordreference.com/display/10.1093/acref/9780191826719.001.0001/q-oro-ed4-00017750'
     },
     {
       id: 'rosalind-franklin',
@@ -106,7 +115,9 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Rosalind_Franklin_%28retouched%29.jpg',
       tags: ['chemistry', 'molecular-biology', 'x-ray-crystallography', 'dna', 'british'],
-      groupMemberships: ['kings-college-chemistry', 'molecular-biology-research']
+      groupMemberships: ['kings-college-chemistry', 'molecular-biology-research'],
+      quote: 'Science and everyday life cannot and should not be separated.',
+      quoteReference: 'https://quoteinvestigator.com/2021/09/12/science-everyday/'
     },
     {
       id: 'shirley-ann-jackson',
@@ -118,7 +129,9 @@ export const stemAchievementsData: DataPackage = {
       phone: '+1-555-276-6000',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Shirley_Ann_Jackson_World_Economic_Forum_2010.jpg',
       tags: ['physics', 'theoretical-physics', 'academia', 'african-american', 'leadership'],
-      groupMemberships: ['rpi-physics', 'mit-alumni']
+      groupMemberships: ['rpi-physics', 'mit-alumni'],
+      quote: 'Do not let others define who you are. Define yourself.',
+      quoteReference: 'https://www.perotmuseum.org/events/children-and-families/stemleaders/shirley-ann-jackson/'
     },
     {
       id: 'kalpana-chawla',
@@ -130,7 +143,9 @@ export const stemAchievementsData: DataPackage = {
       phone: '+1-555-483-0000',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Kalpana_Chawla%2C_NASA_photo_portrait_in_orange_suit.jpg',
       tags: ['aerospace-engineering', 'space-exploration', 'nasa', 'indian-american', 'fluid-dynamics'],
-      groupMemberships: ['nasa-engineering', 'space-shuttle-program']
+      groupMemberships: ['nasa-engineering', 'space-shuttle-program'],
+      quote: 'The path from dreams to success does exist. May you have the vision to find it, the courage to get on it and the perseverance to follow it.',
+      quoteReference: 'https://www.brainyquote.com/authors/kalpana_chawla'
     },
     {
       id: 'jane-goodall',
@@ -142,7 +157,9 @@ export const stemAchievementsData: DataPackage = {
       phone: '+1-555-682-9220',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Jane-goodall_%28cropped%29.jpg',
       tags: ['primatology', 'anthropology', 'conservation', 'british', 'field-research'],
-      groupMemberships: ['janegoodall-institute', 'primatology-research']
+      groupMemberships: ['janegoodall-institute', 'primatology-research'],
+      quote: 'What you do makes a difference, and you have to decide what kind of difference you want to make.',
+      quoteReference: 'https://janegoodall.ca/what-we-do/'
     },
     {
       id: 'sau-lan-wu',
@@ -178,7 +195,9 @@ export const stemAchievementsData: DataPackage = {
       phone: '+1-555-686-4370',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Vera_Rubin_measuring_spectra_%28cropped%29.jpg',
       tags: ['astronomy', 'dark-matter', 'galaxy-rotation', 'observational-astronomy', 'american'],
-      groupMemberships: ['carnegie-observatories', 'dark-matter-research']
+      groupMemberships: ['carnegie-observatories', 'dark-matter-research'],
+      quote: 'There is no problem in science that can be solved by a man that cannot be solved by a woman.',
+      quoteReference: 'https://carnegiescience.edu/news/10-inspiring-quotes-astronomer-vera-rubin'
     },
     {
       id: 'annie-easley',
@@ -238,7 +257,9 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/Emmy_Noether_%283x4_cropped%29.jpg',
       tags: ['mathematics', 'abstract-algebra', 'theoretical-physics', 'german', 'noether-theorem'],
-      groupMemberships: ['mathematical-history', 'german-mathematics']
+      groupMemberships: ['mathematical-history', 'german-mathematics'],
+      quote: 'My methods are really methods of working and thinking; this is why they have crept in everywhere anonymously.',
+      quoteReference: 'https://todayinsci.com/N/Noether_Emmy/NoetherEmmy-Quotations.htm'
     },
     {
       id: 'sonia-kovalevskaya',
@@ -310,7 +331,9 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Maria_Mitchell_portrait.jpg',
       tags: ['astronomy', 'comet-discovery', 'education', 'american', 'nineteenth-century'],
-      groupMemberships: ['vassar-astronomy', 'american-astronomical-society']
+      groupMemberships: ['vassar-astronomy', 'american-astronomical-society'],
+      quote: 'We especially need imagination in science. It is not all mathematics, nor all logic, but it is somewhat beauty and poetry.',
+      quoteReference: 'https://libquotes.com/maria-mitchell'
     },
     {
       id: 'hypatia',
@@ -334,7 +357,9 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Lise_Meitner_NatGeo.jpg',
       tags: ['physics', 'nuclear-physics', 'radioactivity', 'austrian-swedish', 'nuclear-fission'],
-      groupMemberships: ['nuclear-physics-research', 'austrian-physics']
+      groupMemberships: ['nuclear-physics-research', 'austrian-physics'],
+      quote: 'Life need not be easy, provided only that it is not empty.',
+      quoteReference: 'https://todayinsci.com/M/Meitner_Lise/MeitnerLise-Quotations.htm'
     },
     {
       id: 'sophia-brahe',
@@ -389,7 +414,7 @@ export const stemAchievementsData: DataPackage = {
       groupMemberships: ['cambridge-mathematics', 'indian-scientists'],
       reference: 'https://www.britannica.com/biography/Srinivasa-Ramanujan',
       quote: 'An equation for me has no meaning unless it expresses a thought of God.',
-      quoteReference: 'The Man Who Knew Infinity (1991) by Robert Kanigel'
+      quoteReference: 'https://www.goodreads.com/work/quotes/1031423-the-man-who-knew-infinity-a-life-of-the-genius-ramanujan'
     },
     {
       id: 'cv-raman',
@@ -406,20 +431,24 @@ export const stemAchievementsData: DataPackage = {
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['physics', 'optics', 'indian', 'nobel-prize', 'spectroscopy'],
       groupMemberships: ['indian-scientists', 'nobel-laureates', 'physics-research'],
-      reference: 'https://www.nobelprize.org/prizes/physics/1930/raman/biographical/'
+      reference: 'https://www.nobelprize.org/prizes/physics/1930/raman/biographical/',
+      quote: 'The essence of science is independent thinking, hard work, and not equipment.',
+      quoteReference: 'https://www.brainyquote.com/authors/c-v-raman-quotes'
     },
     {
       id: 'a-p-j-abdul-kalam',
       fullName: 'अब्दुल कलाम / A. P. J. Abdul Kalam',
       dateOfBirth: new Date('1931-10-15'),
       pronouns: 'he/him',
-      bio: 'A. P. J. Abdul Kalam, known as the "Missile Man of India," played a pivotal role in developing India\'s ballistic missile and nuclear weapons programs. As a scientist and engineer, he led the development of the Agni and Prithvi missiles and served as chief coordinator of the Pokhran-II nuclear tests in 1998. Later serving as the 11th President of India, Kalam inspired millions of young people to pursue science and technology, earning the title "People\'s President" for his dedication to education and youth empowerment.',
+      bio: 'A. P. J. Abdul Kalam, known as the "Missile Man of India," played a pivotal role in developing India\'s ballistic missile and nuclear weapons programs. As a scientist and engineer, he planned the Integrated Guided Missile Development Programme, which produced the Agni and Prithvi missiles, and served as one of the chief coordinators of the Pokhran-II nuclear tests in 1998. Later serving as the 11th President of India, Kalam inspired millions of young people to pursue science and technology, earning the title "People\'s President" for his dedication to education and youth empowerment.',
       email: 'apj.kalam@drdo.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['aerospace-engineering', 'missiles', 'indian', 'president', 'nuclear-technology'],
       groupMemberships: ['indian-scientists', 'aerospace-research', 'drdo'],
-      reference: 'https://www.britannica.com/biography/A-P-J-Abdul-Kalam'
+      reference: 'https://www.britannica.com/biography/A-P-J-Abdul-Kalam',
+      quote: 'I wonder why some people tend to see science as something which takes man away from God. As I look at it, the path of science can always wind through the heart.',
+      quoteReference: 'https://www.goodreads.com/work/quotes/620871-wings-of-fire-an-autobiography'
     },
     {
       id: 'bj-habibie',
@@ -433,7 +462,7 @@ export const stemAchievementsData: DataPackage = {
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['aerospace-engineering', 'aircraft-design', 'indonesian', 'thermodynamics', 'aerodynamics'],
       groupMemberships: ['indonesian-scientists', 'aerospace-research', 'southeast-asian-research'],
-      reference: 'https://www.britannica.com/biography/B-J-Habibie'
+      reference: 'https://en.wikipedia.org/wiki/B._J._Habibie'
     },
     {
       id: 'flossie-wong-staal',
@@ -446,34 +475,35 @@ export const stemAchievementsData: DataPackage = {
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['virology', 'hiv-aids', 'genetics', 'chinese-american', 'medical-research'],
       groupMemberships: ['medical-researchers', 'virology-research', 'scripps-research'],
-      reference: 'https://www.scripps.edu/news-events/press-room/2020/20200715-wong-staal.html',
-      quote: 'Science is about asking questions and not being afraid of the answers.'
+      reference: 'https://www.scripps.edu/news-events/press-room/2020/20200715-wong-staal.html'
     },
     {
       id: 'cheikh-anta-diop',
       fullName: 'Cheikh Anta Diop',
       dateOfBirth: new Date('1923-12-29'),
       pronouns: 'he/him',
-      bio: 'Cheikh Anta Diop was a Senegalese historian, anthropologist, and physicist who revolutionized the study of ancient African civilizations through scientific methods. He developed carbon-dating techniques specifically for African archaeological sites and used melanin analysis to demonstrate that ancient Egyptians were Black Africans. His multidisciplinary approach, combining physics, chemistry, and archaeology, challenged Eurocentric historical narratives and established African contributions to world civilization on scientific grounds.',
+      bio: 'Cheikh Anta Diop was a Senegalese historian, anthropologist, and physicist who revolutionized the study of ancient African civilizations through scientific methods. He created and directed the radiocarbon dating laboratory at IFAN (Institut Fondamental d\'Afrique Noire) and used melanin analysis to demonstrate that ancient Egyptians were Black Africans. His multidisciplinary approach, combining physics, chemistry, and archaeology, challenged Eurocentric historical narratives and established African contributions to world civilization on scientific grounds.',
       email: 'ca.diop@dakar.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Cheikh_Anta_Diop%2C_late_1940s.jpg',
       tags: ['physics', 'archaeology', 'senegalese', 'carbon-dating', 'african-history'],
       groupMemberships: ['african-scientists', 'archaeology-research', 'dakar-university'],
-      reference: 'https://www.britannica.com/biography/Cheikh-Anta-Diop'
+      reference: 'https://en.wikipedia.org/wiki/Cheikh_Anta_Diop'
     },
     {
       id: 'wangari-maathai-scientist',
       fullName: 'Wangari Muta Maathai',
       dateOfBirth: new Date('1940-04-01'),
       pronouns: 'she/her',
-      bio: 'Wangari Maathai was a Kenyan environmental scientist who founded the Green Belt Movement, combining environmental conservation with community empowerment and women\'s rights. With a Ph.D. in veterinary anatomy from the University of Nairobi, she understood that deforestation and environmental degradation were interconnected with poverty and social injustice. Her scientific approach to reforestation, focusing on indigenous tree species and community-based conservation, earned her the Nobel Peace Prize in 2004 and established her as a pioneer in sustainable development.',
+      bio: 'Wangari Maathai was a Kenyan environmental scientist who founded the Green Belt Movement, combining environmental conservation with community empowerment and women\'s rights. With a Ph.D. from the University of Nairobi, where she also taught veterinary anatomy, she understood that deforestation and environmental degradation were interconnected with poverty and social injustice. Her scientific approach to reforestation, focusing on indigenous tree species and community-based conservation, earned her the Nobel Peace Prize in 2004 and established her as a pioneer in sustainable development.',
       email: 'w.maathai@greenbelt.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Wangari_Maathai_in_2001.jpg',
       tags: ['environmental-science', 'forestry', 'kenyan', 'nobel-prize', 'sustainability'],
       groupMemberships: ['african-scientists', 'environmental-researchers', 'green-belt-movement'],
-      reference: 'https://www.nobelprize.org/prizes/peace/2004/maathai/biographical/'
+      reference: 'https://www.nobelprize.org/prizes/peace/2004/maathai/biographical/',
+      quote: 'In the course of history, there comes a time when humanity is called to shift to a new level of consciousness, to reach a higher moral ground. A time when we have to shed our fear and give hope to each other. That time is now.',
+      quoteReference: 'https://www.nobelprize.org/prizes/peace/2004/maathai/lecture/'
     },
     {
       id: 'thomas-adeoye-lambo',
@@ -486,8 +516,7 @@ export const stemAchievementsData: DataPackage = {
       picture: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Professor_Thomas_Lambo%2C_Psychiatrist_and_Deputy_Director-General_of_the_World_Health_Organisation_%28WHO%29_on_the_28th_of_November%2C_1997.jpg',
       tags: ['psychiatry', 'mental-health', 'nigerian', 'who', 'community-care'],
       groupMemberships: ['african-scientists', 'medical-researchers', 'who-mental-health'],
-      reference: 'https://www.who.int/news-room/feature-stories/detail/thomas-adeoye-lambo',
-      quote: 'Mental health is not just the absence of mental illness, but a state of complete physical, mental and social well-being.'
+      reference: 'https://www.who.int/news-room/feature-stories/detail/thomas-adeoye-lambo'
     },
     {
       id: 'quarraisha-abdool-karim',
@@ -500,8 +529,7 @@ export const stemAchievementsData: DataPackage = {
       picture: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Quarraisha_Abdool_Karim.jpg',
       tags: ['epidemiology', 'hiv-prevention', 'south-african', 'infectious-diseases', 'public-health'],
       groupMemberships: ['african-scientists', 'medical-researchers', 'caprisa'],
-      reference: 'https://www.caprisa.org/about-us/leadership/prof-quarraisha-abdool-karim',
-      quote: 'Science must serve humanity, and research must address the needs of those most vulnerable.'
+      reference: 'https://www.caprisa.org/about-us/leadership/prof-quarraisha-abdool-karim'
     }
   ],
   groups: [
