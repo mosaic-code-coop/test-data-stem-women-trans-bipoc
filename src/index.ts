@@ -530,6 +530,93 @@ export const stemAchievementsData: DataPackage = {
       tags: ['epidemiology', 'hiv-prevention', 'south-african', 'infectious-diseases', 'public-health'],
       groupMemberships: ['african-scientists', 'medical-researchers', 'caprisa'],
       reference: 'https://www.caprisa.org/about-us/leadership/prof-quarraisha-abdool-karim'
+    },
+    {
+      id: 'christina-koch',
+      fullName: 'Christina Hammock Koch',
+      dateOfBirth: new Date('1979-01-29'),
+      pronouns: 'she/her',
+      bio: 'Selected as a mission specialist for the Artemis II flight in April 2026, Christina Koch became the first woman to travel beyond low Earth orbit and around the Moon, helping set a new record for the farthest distance ever travelled by humans from Earth at 406,771 kilometres. An electrical engineer by training, she previously held the record for the longest single spaceflight by a woman with 328 continuous days aboard the International Space Station and participated in the first all-female spacewalks. Before joining the astronaut corps in 2013, she worked as an electrical engineer at NASA Goddard Space Flight Center and as a research associate with the United States Antarctic Program at remote stations including the South Pole.',
+      email: 'christina.koch@nasa.test',
+      phone: '+1-555-483-0000',
+      picture: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Jsc2023e0016435_alt.jpg',
+      tags: ['electrical-engineering', 'aerospace-engineering', 'nasa', 'space-exploration', 'artemis'],
+      groupMemberships: ['nasa-engineering', 'artemis-program', 'johnson-space-center'],
+      reference: 'https://www.nasa.gov/people/christina-koch/'
+    },
+    {
+      id: 'victor-glover',
+      fullName: 'Victor Jerome Glover Jr.',
+      dateOfBirth: new Date('1976-04-30'),
+      pronouns: 'he/him',
+      bio: 'Piloting the Artemis II spacecraft on its lunar flyby in April 2026, Victor Glover became the first Black astronaut to fly to the Moon. A United States Navy commander and graduate test pilot, he holds a bachelor\'s degree in general engineering from Cal Poly San Luis Obispo and three master\'s degrees spanning flight test engineering, systems engineering, and military operational art and science, and has logged over 3,000 flight hours across more than forty aircraft types. As pilot of SpaceX Crew Dragon\'s first operational crewed mission in 2020, he was the first African American to serve as a long-duration crew member aboard the International Space Station.',
+      email: 'victor.glover@nasa.test',
+      phone: '+1-555-483-0000',
+      picture: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Jsc2023e0016433_alt.jpg',
+      tags: ['aerospace-engineering', 'systems-engineering', 'nasa', 'african-american', 'artemis'],
+      groupMemberships: ['nasa-engineering', 'artemis-program', 'johnson-space-center', 'african-american-scientists'],
+      reference: 'https://www.nasa.gov/people/victor-j-glover-jr/'
+    },
+    {
+      id: 'jessica-watkins',
+      fullName: 'Jessica Andrea Watkins',
+      dateOfBirth: new Date('1988-05-14'),
+      pronouns: 'she/her',
+      bio: 'In April 2022, Jessica Watkins became the first Black woman to serve on a long-duration mission aboard the International Space Station, spending 170 days in orbit as a mission specialist on NASA\'s SpaceX Crew-4 flight. A planetary geologist with a PhD from UCLA, she served on the science team operating the Curiosity rover on Mars and was a postdoctoral fellow at Caltech before her selection as an astronaut in 2017. She is part of the active astronaut corps eligible for future Artemis lunar missions, and her record-setting ISS tour expanded the catalogue of Black women in long-duration spaceflight.',
+      email: 'jessica.watkins@nasa.test',
+      phone: '+1-555-483-0000',
+      picture: 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Jessica_Watkins_Astronaut_portrait_%28cropped%29.jpg',
+      tags: ['geology', 'planetary-science', 'nasa', 'african-american', 'space-exploration'],
+      groupMemberships: ['nasa-engineering', 'johnson-space-center', 'african-american-scientists'],
+      reference: 'https://www.nasa.gov/people/jessica-watkins/'
+    },
+    {
+      id: 'vanessa-wyche',
+      fullName: 'Vanessa E. Wyche',
+      pronouns: 'she/her',
+      bio: 'Vanessa Wyche serves as director of NASA\'s Johnson Space Center in Houston, overseeing astronaut selection and training, the Mission Control Center, and the program offices for Orion, the International Space Station, Gateway, and the Artemis lunar missions including the crewed Artemis II flight. Her appointment in 2021 made her the first African American woman to lead any NASA centre; in 2025 she was named acting Associate Administrator, the highest-ranking civil-servant position at the agency. A bioengineer educated at Clemson University, she has spent more than three decades at NASA in roles ranging from Space Shuttle flight manager to director of the Exploration Integration and Science Directorate.',
+      email: 'vanessa.wyche@nasa.test',
+      phone: '+1-555-483-0000',
+      picture: 'https://upload.wikimedia.org/wikipedia/commons/d/dc/Vanessa_E._Wyche_in_2022.jpg',
+      tags: ['bioengineering', 'nasa', 'leadership', 'african-american', 'artemis'],
+      groupMemberships: ['nasa-engineering', 'johnson-space-center', 'artemis-program', 'african-american-scientists'],
+      reference: 'https://www.nasa.gov/people/vanessa-e-wyche/'
+    },
+    {
+      id: 'charlie-blackwell-thompson',
+      fullName: 'Charlie Blackwell-Thompson',
+      pronouns: 'she/her',
+      bio: 'As NASA\'s first female launch director, Charlie Blackwell-Thompson commanded the countdown and liftoff of the Space Launch System and Orion spacecraft for both the uncrewed Artemis I flight in 2022 and the crewed Artemis II mission in April 2026. A computer engineer educated at Clemson University, she leads the launch team for the agency\'s Exploration Ground Systems Program at Kennedy Space Center and holds multiple patents related to launch vehicle interface standardisation and command and control systems. Before her launch director role she served as chief NASA test director through the conclusion of the Space Shuttle Program and as assistant launch director for STS-133.',
+      email: 'charlie.blackwell-thompson@nasa.test',
+      phone: '+1-555-867-0000',
+      picture: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Charlie_Blackwell-Thompson_NASA_Portrait.jpg',
+      tags: ['computer-engineering', 'nasa', 'leadership', 'artemis', 'space-exploration'],
+      groupMemberships: ['kennedy-space-center', 'exploration-ground-systems', 'artemis-program'],
+      reference: 'https://www.nasa.gov/people/kennedy-biographies-blackwell-thompson/'
+    },
+    {
+      id: 'robin-witt',
+      fullName: 'Robin Witt',
+      pronouns: 'she/her',
+      bio: 'As an electrical engineer at NASA contractor ERC at Kennedy Space Center, Robin Witt contributed to the integration and testing work that prepared the Space Launch System for the Artemis I uncrewed test flight in 2022, the foundational mission whose success cleared the path for the crewed Artemis II flight. After living in Florida since elementary school, she resigned her position in 2023 and relocated to Chicago, citing concerns for her safety as a transgender woman under the state\'s expanding anti-transgender legislation. She has continued her aerospace and defence engineering career, working subsequently as an Energetics Manufacturing Engineer at Northrop Grumman.',
+      email: 'robin.witt@artemis-engineers.test',
+      phone: null,
+      picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
+      tags: ['electrical-engineering', 'aerospace-engineering', 'transgender', 'lgbtq', 'artemis'],
+      groupMemberships: ['kennedy-space-center', 'artemis-program', 'northrop-grumman'],
+      reference: 'https://futurism.com/the-byte/nasa-engineer-quit-transgender'
+    },
+    {
+      id: 'amy-lendian',
+      fullName: 'Amy Lendian',
+      pronouns: 'she/her',
+      bio: 'Brought out of retirement to support the Artemis II flight in April 2026, Amy Lendian served as acting systems engineering supervisor in NASA\'s launch control firing room at Kennedy Space Center, leading a team of four engineers responsible for monitoring water, electrical, and fire-suppression subsystems during the countdown to the first crewed flight of the Space Launch System and Orion spacecraft. Her decades of NASA launch experience placed her at the console for one of the most consequential moments of the Artemis programme. Her continued contribution illustrates the depth of institutional knowledge that veteran women engineers bring to active human spaceflight programmes.',
+      email: 'amy.lendian@nasa.test',
+      phone: '+1-555-867-0000',
+      picture: 'https://www.nasa.gov/wp-content/uploads/2023/07/amylendian_ksc-20230530-ph-kls01_0018.jpg',
+      tags: ['systems-engineering', 'nasa', 'artemis', 'space-exploration', 'leadership'],
+      groupMemberships: ['kennedy-space-center', 'exploration-ground-systems', 'artemis-program'],
+      reference: 'https://www.nasa.gov/image-article/systems-engineering-supervisor-amy-lendian/'
     }
   ],
   groups: [
@@ -1078,6 +1165,46 @@ export const stemAchievementsData: DataPackage = {
       email: 'contact@medicalresearchers.test',
       website: 'https://medicalresearchers.org',
       picture: null
+    },
+    {
+      id: 'artemis-program',
+      name: 'NASA Artemis Program',
+      about: 'NASA programme returning crewed missions to the Moon, including the Artemis II lunar flyby flight in April 2026 — the first time astronauts had travelled beyond low Earth orbit since 1972.',
+      email: 'artemis@nasa.test',
+      website: 'https://www.nasa.gov/humans-in-space/artemis/',
+      picture: null
+    },
+    {
+      id: 'johnson-space-center',
+      name: 'NASA Johnson Space Center',
+      about: 'NASA centre in Houston, Texas, home to the astronaut corps, Mission Control, and the program offices for the International Space Station, Orion, Gateway, and Artemis lunar missions.',
+      email: 'jsc@nasa.test',
+      website: 'https://www.nasa.gov/johnson/',
+      picture: null
+    },
+    {
+      id: 'kennedy-space-center',
+      name: 'NASA Kennedy Space Center',
+      about: 'NASA launch site on Florida\'s Space Coast, including Launch Pad 39B from which the Artemis I and Artemis II Space Launch System rockets lifted off.',
+      email: 'ksc@nasa.test',
+      website: 'https://www.nasa.gov/kennedy/',
+      picture: null
+    },
+    {
+      id: 'exploration-ground-systems',
+      name: 'NASA Exploration Ground Systems Program',
+      about: 'NASA programme based at Kennedy Space Center responsible for the launch infrastructure, ground processing, and launch control systems for the Space Launch System and Orion spacecraft.',
+      email: 'egs@nasa.test',
+      website: 'https://www.nasa.gov/exploration-ground-systems/',
+      picture: null
+    },
+    {
+      id: 'northrop-grumman',
+      name: 'Northrop Grumman',
+      about: 'American aerospace and defence company that builds the solid rocket boosters for the Space Launch System and the Habitation and Logistics Outpost (HALO) module for the Gateway lunar space station.',
+      email: 'contact@northropgrumman.test',
+      website: 'https://www.northropgrumman.com',
+      picture: null
     }
   ],
   events: [
@@ -1110,6 +1237,13 @@ export const stemAchievementsData: DataPackage = {
       name: 'Space Exploration and Technology Summit',
       date: new Date('2024-08-30'),
       attendeeIds: ['katherine-johnson', 'kalpana-chawla', 'mary-jackson', 'dorothy-vaughan']
+    },
+    {
+      id: 'artemis-2-mission-2026',
+      name: 'Artemis II Lunar Flyby Mission',
+      date: new Date('2026-04-01'),
+      attendeeIds: ['christina-koch', 'victor-glover', 'vanessa-wyche', 'charlie-blackwell-thompson', 'amy-lendian'],
+      reference: 'https://en.wikipedia.org/wiki/Artemis_II'
     }
   ]
 };
