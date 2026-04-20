@@ -1,4 +1,4 @@
-import type { Person, Group, Event, DataPackage, DataPackageMetadata } from 'test-data-factory/dist/types.js';
+import type { DataPackage } from 'test-data-factory/dist/types.js';
 
 // STEM Achievements Dataset
 // Real people who made significant contributions to Science, Technology, Engineering, and Mathematics
@@ -6,7 +6,7 @@ import type { Person, Group, Event, DataPackage, DataPackageMetadata } from 'tes
 
 export const stemAchievementsData: DataPackage = {
   metadata: {
-    containsFirstNationsPeople: false // Currently no Indigenous/First Nations scientists in dataset
+    containsFirstNationsPeople: false, // Currently no Indigenous/First Nations scientists in dataset
   },
   people: [
     {
@@ -14,15 +14,16 @@ export const stemAchievementsData: DataPackage = {
       fullName: 'Katherine Johnson',
       dateOfBirth: new Date('1918-08-26'),
       pronouns: 'she/her',
-      bio: 'Katherine Johnson\'s calculations were critical to the success of NASA\'s early space missions, including Alan Shepard\'s 1961 spaceflight and John Glenn\'s 1962 orbital mission. She overcame both racial and gender discrimination to become one of the most respected "computers" at NASA, where her mathematical precision helped ensure the safety of astronauts during the critical early years of space exploration. Her work on orbital mechanics and trajectory calculations demonstrated exceptional mathematical skill and contributed to the success of the Apollo program.',
+      bio: "Katherine Johnson's calculations were critical to the success of NASA's early space missions, including Alan Shepard's 1961 spaceflight and John Glenn's 1962 orbital mission. She overcame both racial and gender discrimination to become one of the most respected \"computers\" at NASA, where her mathematical precision helped ensure the safety of astronauts during the critical early years of space exploration. Her work on orbital mechanics and trajectory calculations demonstrated exceptional mathematical skill and contributed to the success of the Apollo program.",
       email: 'katherine.johnson@nasa.test',
       phone: '+1-555-864-1000',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Katherine_Johnson_1983.jpg',
       tags: ['mathematics', 'physics', 'nasa', 'space-exploration', 'african-american'],
       groupMemberships: ['nasa-mathematics', 'african-american-scientists'],
       reference: 'https://www.nasa.gov/content/katherine-johnson-biography',
-      quote: 'I counted everything. I counted the steps to the road, the steps up to church, the number of dishes and silverware I washed … anything that could be counted, I did.',
-      quoteReference: 'https://www.nasa.gov/image-article/katherine-johnson-at-work-1962/'
+      quote:
+        'I counted everything. I counted the steps to the road, the steps up to church, the number of dishes and silverware I washed … anything that could be counted, I did.',
+      quoteReference: 'https://www.nasa.gov/image-article/katherine-johnson-at-work-1962/',
     },
     {
       id: 'chien-shiung-wu',
@@ -36,27 +37,30 @@ export const stemAchievementsData: DataPackage = {
       bio: 'The Wu experiment, conducted in 1956, disproved the law of conservation of parity and revolutionized our understanding of particle physics. Chien-Shiung Wu\'s meticulous experimental work at Columbia University demonstrated that the weak nuclear force violates parity symmetry, a discovery that earned her colleagues the 1957 Nobel Prize in Physics. Despite facing discrimination as both a woman and an immigrant from China, she became known as the "First Lady of Physics" for her exceptional experimental skills and contributions to nuclear physics.',
       email: 'chien-shiung.wu@columbia.test',
       phone: '+1-555-854-1754',
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d2/Chien-shiung_Wu_%281912-1997%29_C.jpg',
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/d/d2/Chien-shiung_Wu_%281912-1997%29_C.jpg',
       tags: ['physics', 'nuclear-physics', 'experimental-physics', 'asian-american', 'nobel-prize'],
       groupMemberships: ['columbia-physics', 'experimental-physicists'],
       reference: 'https://www.britannica.com/biography/Chien-Shiung-Wu',
-      quote: 'There is only one thing worse than coming home from the lab to a sink full of dirty dishes, and that is not going to the lab at all!',
-      quoteReference: 'https://todayinsci.com/W/Wu_ChienShiung/WuChienShiung-Quotations.htm'
+      quote:
+        'There is only one thing worse than coming home from the lab to a sink full of dirty dishes, and that is not going to the lab at all!',
+      quoteReference: 'https://todayinsci.com/W/Wu_ChienShiung/WuChienShiung-Quotations.htm',
     },
     {
       id: 'ada-lovelace',
       fullName: 'Ada Lovelace',
       dateOfBirth: new Date('1815-12-10'),
       pronouns: 'she/her',
-      bio: 'The first computer programmer, who wrote the first algorithm intended to be processed by Charles Babbage\'s Analytical Engine in the 1840s. Lovelace recognized that the machine could go beyond mere calculation to process any symbolic information, including music and text, making her the first person to envision the broader potential of computing. Her mathematical insights and detailed notes on the Analytical Engine established fundamental concepts of computer programming that would not be fully realized until the 20th century.',
+      bio: "The first computer programmer, who wrote the first algorithm intended to be processed by Charles Babbage's Analytical Engine in the 1840s. Lovelace recognized that the machine could go beyond mere calculation to process any symbolic information, including music and text, making her the first person to envision the broader potential of computing. Her mathematical insights and detailed notes on the Analytical Engine established fundamental concepts of computer programming that would not be fully realized until the 20th century.",
       email: 'ada.lovelace@computing-history.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Ada_lovelace.jpg',
       tags: ['computer-science', 'mathematics', 'programming', 'victorian-era', 'british'],
       groupMemberships: ['computer-pioneers', 'mathematical-history'],
       reference: 'https://www.britannica.com/biography/Ada-Lovelace',
-      quote: 'The Analytical Engine weaves algebraical patterns just as the Jacquard-loom weaves flowers and leaves.',
-      quoteReference: 'https://psychclassics.yorku.ca/Lovelace/lovelace.htm'
+      quote:
+        'The Analytical Engine weaves algebraical patterns just as the Jacquard-loom weaves flowers and leaves.',
+      quoteReference: 'https://psychclassics.yorku.ca/Lovelace/lovelace.htm',
     },
     {
       id: 'marie-curie',
@@ -74,8 +78,9 @@ export const stemAchievementsData: DataPackage = {
       tags: ['physics', 'chemistry', 'radioactivity', 'nobel-prize', 'polish-french'],
       groupMemberships: ['sorbonne-physics', 'radioactivity-research'],
       reference: 'https://www.nobelprize.org/prizes/physics/1903/curie/facts/',
-      quote: 'Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.',
-      quoteReference: 'https://www.brainyquote.com/quotes/marie_curie_389010'
+      quote:
+        'Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.',
+      quoteReference: 'https://www.brainyquote.com/quotes/marie_curie_389010',
     },
     {
       id: 'dorothy-vaughan',
@@ -88,8 +93,8 @@ export const stemAchievementsData: DataPackage = {
       picture: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Dorothy_Vaughan_2.jpg',
       tags: ['mathematics', 'computer-science', 'nasa', 'african-american', 'leadership'],
       groupMemberships: ['nasa-mathematics', 'west-area-computing'],
-      quote: 'I changed what I could, and what I couldn\'t, I endured.',
-      quoteReference: 'https://www.nasa.gov/people/dorothy-vaughan/'
+      quote: "I changed what I could, and what I couldn't, I endured.",
+      quoteReference: 'https://www.nasa.gov/people/dorothy-vaughan/',
     },
     {
       id: 'grace-hopper',
@@ -102,22 +107,24 @@ export const stemAchievementsData: DataPackage = {
       picture: 'https://upload.wikimedia.org/wikipedia/commons/3/37/Grace_Hopper_and_UNIVAC.jpg',
       tags: ['computer-science', 'programming', 'navy', 'cobol', 'compiler'],
       groupMemberships: ['navy-computing', 'programming-pioneers'],
-      quote: 'It\'s easier to ask forgiveness than it is to get permission.',
-      quoteReference: 'https://www.oxfordreference.com/display/10.1093/acref/9780191826719.001.0001/q-oro-ed4-00017750'
+      quote: "It's easier to ask forgiveness than it is to get permission.",
+      quoteReference:
+        'https://www.oxfordreference.com/display/10.1093/acref/9780191826719.001.0001/q-oro-ed4-00017750',
     },
     {
       id: 'rosalind-franklin',
       fullName: 'Rosalind Franklin',
       dateOfBirth: new Date('1920-07-25'),
       pronouns: 'she/her',
-      bio: 'The famous "Photo 51," produced through meticulous X-ray diffraction work at King\'s College London, revealed the helical structure of DNA and provided crucial evidence for the double helix model. Rosalind Franklin\'s contributions were not fully recognized during her lifetime, though her experimental precision was essential to understanding DNA\'s structure. Her research on the molecular structure of coal and viruses also made significant contributions to our understanding of complex molecular structures.',
+      bio: "The famous \"Photo 51,\" produced through meticulous X-ray diffraction work at King's College London, revealed the helical structure of DNA and provided crucial evidence for the double helix model. Rosalind Franklin's contributions were not fully recognized during her lifetime, though her experimental precision was essential to understanding DNA's structure. Her research on the molecular structure of coal and viruses also made significant contributions to our understanding of complex molecular structures.",
       email: 'rosalind.franklin@kcl.test',
       phone: null,
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Rosalind_Franklin_%28retouched%29.jpg',
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/f/fd/Rosalind_Franklin_%28retouched%29.jpg',
       tags: ['chemistry', 'molecular-biology', 'x-ray-crystallography', 'dna', 'british'],
       groupMemberships: ['kings-college-chemistry', 'molecular-biology-research'],
       quote: 'Science and everyday life cannot and should not be separated.',
-      quoteReference: 'https://quoteinvestigator.com/2021/09/12/science-everyday/'
+      quoteReference: 'https://quoteinvestigator.com/2021/09/12/science-everyday/',
     },
     {
       id: 'shirley-ann-jackson',
@@ -127,11 +134,13 @@ export const stemAchievementsData: DataPackage = {
       bio: 'In 1973, Shirley Ann Jackson became the first African American woman to earn a doctorate from MIT, going on to conduct research in theoretical particle physics and solid state physics. Her scientific work contributed to advances in telecommunications technology, including the development of touch-tone telephones and fiber optic cables. As president of Rensselaer Polytechnic Institute, her leadership in academia and government has helped expand opportunities for underrepresented groups in STEM fields.',
       email: 'shirley.jackson@rpi.test',
       phone: '+1-555-276-6000',
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Shirley_Ann_Jackson_World_Economic_Forum_2010.jpg',
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/6/6b/Shirley_Ann_Jackson_World_Economic_Forum_2010.jpg',
       tags: ['physics', 'theoretical-physics', 'academia', 'african-american', 'leadership'],
       groupMemberships: ['rpi-physics', 'mit-alumni'],
       quote: 'Do not let others define who you are. Define yourself.',
-      quoteReference: 'https://www.perotmuseum.org/events/children-and-families/stemleaders/shirley-ann-jackson/'
+      quoteReference:
+        'https://www.perotmuseum.org/events/children-and-families/stemleaders/shirley-ann-jackson/',
     },
     {
       id: 'kalpana-chawla',
@@ -141,37 +150,46 @@ export const stemAchievementsData: DataPackage = {
       bio: 'Kalpana Chawla became the first woman of Indian descent to fly in space when she served as a mission specialist on the Space Shuttle Columbia. Her work focused on fluid dynamics and microgravity research, contributing to our understanding of how materials behave in space. Her engineering expertise and determination inspired countless young people, particularly in India and among immigrant communities, to pursue careers in aerospace engineering and space exploration.',
       email: 'kalpana.chawla@nasa.test',
       phone: '+1-555-483-0000',
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Kalpana_Chawla%2C_NASA_photo_portrait_in_orange_suit.jpg',
-      tags: ['aerospace-engineering', 'space-exploration', 'nasa', 'indian-american', 'fluid-dynamics'],
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/9/9c/Kalpana_Chawla%2C_NASA_photo_portrait_in_orange_suit.jpg',
+      tags: [
+        'aerospace-engineering',
+        'space-exploration',
+        'nasa',
+        'indian-american',
+        'fluid-dynamics',
+      ],
       groupMemberships: ['nasa-engineering', 'space-shuttle-program'],
-      quote: 'The path from dreams to success does exist. May you have the vision to find it, the courage to get on it and the perseverance to follow it.',
-      quoteReference: 'https://www.brainyquote.com/authors/kalpana_chawla'
+      quote:
+        'The path from dreams to success does exist. May you have the vision to find it, the courage to get on it and the perseverance to follow it.',
+      quoteReference: 'https://www.brainyquote.com/authors/kalpana_chawla',
     },
     {
       id: 'jane-goodall',
       fullName: 'Jane Goodall',
       dateOfBirth: new Date('1934-04-03'),
       pronouns: 'she/her',
-      bio: 'Jane Goodall\'s long-term study of chimpanzee communities in Tanzania revealed their complex social structures, tool-making abilities, and emotional lives, challenging the traditional boundary between humans and other animals. Her observations revolutionized our understanding of animal behavior and human evolution. Her work has influenced conservation efforts worldwide and continues to shape our understanding of the natural world.',
+      bio: "Jane Goodall's long-term study of chimpanzee communities in Tanzania revealed their complex social structures, tool-making abilities, and emotional lives, challenging the traditional boundary between humans and other animals. Her observations revolutionized our understanding of animal behavior and human evolution. Her work has influenced conservation efforts worldwide and continues to shape our understanding of the natural world.",
       email: 'jane.goodall@janegoodall.test',
       phone: '+1-555-682-9220',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Jane-goodall_%28cropped%29.jpg',
       tags: ['primatology', 'anthropology', 'conservation', 'british', 'field-research'],
       groupMemberships: ['janegoodall-institute', 'primatology-research'],
-      quote: 'What you do makes a difference, and you have to decide what kind of difference you want to make.',
-      quoteReference: 'https://janegoodall.ca/what-we-do/'
+      quote:
+        'What you do makes a difference, and you have to decide what kind of difference you want to make.',
+      quoteReference: 'https://janegoodall.ca/what-we-do/',
     },
     {
       id: 'sau-lan-wu',
       fullName: 'Wú Sàulán (吳秀蘭) / Sau Lan Wu',
       dateOfBirth: new Date('1940-05-30'),
       pronouns: 'she/her',
-      bio: 'Sau Lan Wu\'s experimental work at CERN contributed to the discovery of the gluon and later the Higgs boson, fundamental particles that help explain the structure of matter. Her research on particle collisions and detector development has been crucial to advancing our understanding of the Standard Model of particle physics. Her work demonstrates the importance of experimental precision in testing theoretical predictions about the fundamental nature of the universe.',
+      bio: "Sau Lan Wu's experimental work at CERN contributed to the discovery of the gluon and later the Higgs boson, fundamental particles that help explain the structure of matter. Her research on particle collisions and detector development has been crucial to advancing our understanding of the Standard Model of particle physics. Her work demonstrates the importance of experimental precision in testing theoretical predictions about the fundamental nature of the universe.",
       email: 'sau-lan.wu@cern.test',
       phone: '+41-555-767-4101',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['physics', 'particle-physics', 'cern', 'asian-american', 'experimental-physics'],
-      groupMemberships: ['cern-physics', 'particle-detection']
+      groupMemberships: ['cern-physics', 'particle-detection'],
     },
     {
       id: 'mamie-phipps-clark',
@@ -183,21 +201,23 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Mamie_Clark_1958.jpg',
       tags: ['psychology', 'social-psychology', 'education', 'african-american', 'civil-rights'],
-      groupMemberships: ['psychology-research', 'education-psychology']
+      groupMemberships: ['psychology-research', 'education-psychology'],
     },
     {
       id: 'vera-rubin',
       fullName: 'Vera Rubin',
       dateOfBirth: new Date('1928-07-23'),
       pronouns: 'she/her',
-      bio: 'Vera Rubin\'s meticulous measurements of how stars orbit the centers of galaxies revealed that visible matter alone cannot account for the observed gravitational effects, providing the first compelling evidence for the existence of dark matter. Her observations of galaxy rotation curves fundamentally changed cosmology and our understanding of the universe\'s composition. Her work demonstrated the importance of careful observational astronomy in advancing theoretical understanding.',
+      bio: "Vera Rubin's meticulous measurements of how stars orbit the centers of galaxies revealed that visible matter alone cannot account for the observed gravitational effects, providing the first compelling evidence for the existence of dark matter. Her observations of galaxy rotation curves fundamentally changed cosmology and our understanding of the universe's composition. Her work demonstrated the importance of careful observational astronomy in advancing theoretical understanding.",
       email: 'vera.rubin@carnegie-science.test',
       phone: '+1-555-686-4370',
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Vera_Rubin_measuring_spectra_%28cropped%29.jpg',
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/6/6d/Vera_Rubin_measuring_spectra_%28cropped%29.jpg',
       tags: ['astronomy', 'dark-matter', 'galaxy-rotation', 'observational-astronomy', 'american'],
       groupMemberships: ['carnegie-observatories', 'dark-matter-research'],
-      quote: 'There is no problem in science that can be solved by a man that cannot be solved by a woman.',
-      quoteReference: 'https://carnegiescience.edu/news/10-inspiring-quotes-astronomer-vera-rubin'
+      quote:
+        'There is no problem in science that can be solved by a man that cannot be solved by a woman.',
+      quoteReference: 'https://carnegiescience.edu/news/10-inspiring-quotes-astronomer-vera-rubin',
     },
     {
       id: 'annie-easley',
@@ -209,7 +229,7 @@ export const stemAchievementsData: DataPackage = {
       phone: '+1-555-433-4000',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/Annie_Easley.jpg',
       tags: ['computer-science', 'mathematics', 'nasa', 'african-american', 'energy-systems'],
-      groupMemberships: ['nasa-mathematics', 'lewis-research-center']
+      groupMemberships: ['nasa-mathematics', 'lewis-research-center'],
     },
     {
       id: 'charlotte-angas-scott',
@@ -221,31 +241,32 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/9/99/CharlotteAngasScott1910.png',
       tags: ['mathematics', 'algebraic-geometry', 'mathematical-education', 'british', 'academia'],
-      groupMemberships: ['brynmawr-mathematics', 'mathematical-education']
+      groupMemberships: ['brynmawr-mathematics', 'mathematical-education'],
     },
     {
       id: 'mary-jackson',
       fullName: 'Mary Jackson',
       dateOfBirth: new Date('1921-04-09'),
       pronouns: 'she/her',
-      bio: 'NASA\'s first African American female engineer, who worked on wind tunnel experiments and data analysis for aircraft design during the 1950s and 1960s. Jackson\'s engineering work contributed to the safety and efficiency of aircraft design, and she later worked to promote the hiring and promotion of other women in NASA\'s engineering ranks. Her career demonstrated the importance of both technical expertise and advocacy for diversity in STEM fields.',
+      bio: "NASA's first African American female engineer, who worked on wind tunnel experiments and data analysis for aircraft design during the 1950s and 1960s. Jackson's engineering work contributed to the safety and efficiency of aircraft design, and she later worked to promote the hiring and promotion of other women in NASA's engineering ranks. Her career demonstrated the importance of both technical expertise and advocacy for diversity in STEM fields.",
       email: 'mary.jackson@nasa.test',
       phone: '+1-555-864-1000',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['engineering', 'aerospace-engineering', 'nasa', 'african-american', 'wind-tunnels'],
-      groupMemberships: ['nasa-engineering', 'langley-research-center']
+      groupMemberships: ['nasa-engineering', 'langley-research-center'],
     },
     {
       id: 'sophie-germain',
       fullName: 'Sophie Germain',
       dateOfBirth: new Date('1776-04-01'),
       pronouns: 'she/her',
-      bio: 'Despite facing gender discrimination that prevented her from attending the École Polytechnique, Sophie Germain corresponded with leading mathematicians and made substantial contributions to number theory and mathematical physics during the early 19th century. Her work on Fermat\'s Last Theorem and her research on elasticity theory established her as one of the most important mathematicians of her time. She pioneered mathematical approaches to understanding vibration patterns in elastic surfaces, work that would later influence engineering and physics.',
+      bio: "Despite facing gender discrimination that prevented her from attending the École Polytechnique, Sophie Germain corresponded with leading mathematicians and made substantial contributions to number theory and mathematical physics during the early 19th century. Her work on Fermat's Last Theorem and her research on elasticity theory established her as one of the most important mathematicians of her time. She pioneered mathematical approaches to understanding vibration patterns in elastic surfaces, work that would later influence engineering and physics.",
       email: 'sophie.germain@mathematics-history.test',
       phone: null,
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Germain_-_%C5%92uvres_philosophiques%2C_1896_%28Illustration_page_4%29.jpg',
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/1/15/Germain_-_%C5%92uvres_philosophiques%2C_1896_%28Illustration_page_4%29.jpg',
       tags: ['mathematics', 'number-theory', 'elasticity-theory', 'french', 'nineteenth-century'],
-      groupMemberships: ['mathematical-history', 'french-mathematics']
+      groupMemberships: ['mathematical-history', 'french-mathematics'],
     },
     {
       id: 'emmy-noether',
@@ -255,11 +276,13 @@ export const stemAchievementsData: DataPackage = {
       bio: 'Noether\'s theorem, which connects symmetries to conservation laws, has been called "one of the most important mathematical theorems ever proved in guiding the development of modern physics." Emmy Noether\'s work in abstract algebra revolutionized the field and established new approaches to understanding algebraic structures. Despite facing discrimination as a woman and a Jew in early 20th century Germany, she became one of the most influential mathematicians of her time.',
       email: 'emmy.noether@mathematics-history.test',
       phone: null,
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/Emmy_Noether_%283x4_cropped%29.jpg',
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/b/b5/Emmy_Noether_%283x4_cropped%29.jpg',
       tags: ['mathematics', 'abstract-algebra', 'theoretical-physics', 'german', 'noether-theorem'],
       groupMemberships: ['mathematical-history', 'german-mathematics'],
-      quote: 'My methods are really methods of working and thinking; this is why they have crept in everywhere anonymously.',
-      quoteReference: 'https://todayinsci.com/N/Noether_Emmy/NoetherEmmy-Quotations.htm'
+      quote:
+        'My methods are really methods of working and thinking; this is why they have crept in everywhere anonymously.',
+      quoteReference: 'https://todayinsci.com/N/Noether_Emmy/NoetherEmmy-Quotations.htm',
     },
     {
       id: 'sonia-kovalevskaya',
@@ -271,7 +294,7 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['mathematics', 'analysis', 'partial-differential-equations', 'russian', 'mechanics'],
-      groupMemberships: ['mathematical-history', 'russian-mathematics']
+      groupMemberships: ['mathematical-history', 'russian-mathematics'],
     },
     {
       id: 'wang-zhenyi',
@@ -283,7 +306,7 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['astronomy', 'mathematics', 'celestial-mechanics', 'chinese', 'qing-dynasty'],
-      groupMemberships: ['chinese-astronomy', 'mathematical-history']
+      groupMemberships: ['chinese-astronomy', 'mathematical-history'],
     },
     {
       id: 'caroline-herschel',
@@ -295,7 +318,7 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['astronomy', 'stellar-astronomy', 'comet-discovery', 'british', 'german-born'],
-      groupMemberships: ['royal-astronomical-society', 'stellar-astronomy-research']
+      groupMemberships: ['royal-astronomical-society', 'stellar-astronomy-research'],
     },
     {
       id: 'maria-gaetana-agnesi',
@@ -307,33 +330,34 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Maria_Gaetana_Agnesi.jpg',
       tags: ['mathematics', 'calculus', 'differential-equations', 'italian', 'eighteenth-century'],
-      groupMemberships: ['italian-mathematics', 'mathematical-history']
+      groupMemberships: ['italian-mathematics', 'mathematical-history'],
     },
     {
       id: 'dorothy-hodgkin',
       fullName: 'Dorothy Hodgkin',
       dateOfBirth: new Date('1910-05-12'),
       pronouns: 'she/her',
-      bio: 'Dorothy Hodgkin\'s determination of the structures of penicillin, vitamin B12, and insulin using X-ray crystallography revolutionized our understanding of these important compounds and earned her the 1964 Nobel Prize in Chemistry. Her work demonstrated the power of crystallography in revealing the three-dimensional structure of complex molecules. She was only the third woman to win the Nobel Prize in Chemistry, following Marie Curie and Irène Joliot-Curie.',
+      bio: "Dorothy Hodgkin's determination of the structures of penicillin, vitamin B12, and insulin using X-ray crystallography revolutionized our understanding of these important compounds and earned her the 1964 Nobel Prize in Chemistry. Her work demonstrated the power of crystallography in revealing the three-dimensional structure of complex molecules. She was only the third woman to win the Nobel Prize in Chemistry, following Marie Curie and Irène Joliot-Curie.",
       email: 'dorothy.hodgkin@oxford-chemistry.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/en/3/3f/Dorothy_Hodgkin_Nobel.jpg',
       tags: ['chemistry', 'x-ray-crystallography', 'biochemistry', 'british', 'nobel-prize'],
-      groupMemberships: ['oxford-chemistry', 'crystallography-research']
+      groupMemberships: ['oxford-chemistry', 'crystallography-research'],
     },
     {
       id: 'maria-mitchell',
       fullName: 'Maria Mitchell',
       dateOfBirth: new Date('1818-08-01'),
       pronouns: 'she/her',
-      bio: 'Maria Mitchell\'s discovery of a comet in 1847 earned her international recognition and a gold medal from the King of Denmark, making her the first American woman to achieve such astronomical distinction. She became the first woman elected to the American Academy of Arts and Sciences and later established the first astronomy program for women in the United States at Vassar College. Her career demonstrated that women could excel in observational science and inspired generations of female astronomers.',
+      bio: "Maria Mitchell's discovery of a comet in 1847 earned her international recognition and a gold medal from the King of Denmark, making her the first American woman to achieve such astronomical distinction. She became the first woman elected to the American Academy of Arts and Sciences and later established the first astronomy program for women in the United States at Vassar College. Her career demonstrated that women could excel in observational science and inspired generations of female astronomers.",
       email: 'maria.mitchell@vassar-astronomy.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Maria_Mitchell_portrait.jpg',
       tags: ['astronomy', 'comet-discovery', 'education', 'american', 'nineteenth-century'],
       groupMemberships: ['vassar-astronomy', 'american-astronomical-society'],
-      quote: 'We especially need imagination in science. It is not all mathematics, nor all logic, but it is somewhat beauty and poetry.',
-      quoteReference: 'https://libquotes.com/maria-mitchell'
+      quote:
+        'We especially need imagination in science. It is not all mathematics, nor all logic, but it is somewhat beauty and poetry.',
+      quoteReference: 'https://libquotes.com/maria-mitchell',
     },
     {
       id: 'hypatia',
@@ -345,21 +369,21 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['mathematics', 'astronomy', 'philosophy', 'greek', 'ancient-world'],
-      groupMemberships: ['ancient-mathematics', 'alexandria-school']
+      groupMemberships: ['ancient-mathematics', 'alexandria-school'],
     },
     {
       id: 'lise-meitner',
       fullName: 'Lise Meitner',
       dateOfBirth: new Date('1878-11-07'),
       pronouns: 'she/her',
-      bio: 'Lise Meitner\'s theoretical work provided the first physical explanation of nuclear fission, the process discovered through her collaboration with Otto Hahn and Fritz Strassmann, though her contributions were not fully recognized when Hahn received the Nobel Prize in Chemistry. Her research on beta decay and nuclear processes established her as one of the leading nuclear physicists of the early 20th century. Element 109, meitnerium, was named in her honor, a recognition of her lasting impact on physics.',
+      bio: "Lise Meitner's theoretical work provided the first physical explanation of nuclear fission, the process discovered through her collaboration with Otto Hahn and Fritz Strassmann, though her contributions were not fully recognized when Hahn received the Nobel Prize in Chemistry. Her research on beta decay and nuclear processes established her as one of the leading nuclear physicists of the early 20th century. Element 109, meitnerium, was named in her honor, a recognition of her lasting impact on physics.",
       email: 'lise.meitner@nuclear-physics.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Lise_Meitner_NatGeo.jpg',
       tags: ['physics', 'nuclear-physics', 'radioactivity', 'austrian-swedish', 'nuclear-fission'],
       groupMemberships: ['nuclear-physics-research', 'austrian-physics'],
       quote: 'Life need not be easy, provided only that it is not empty.',
-      quoteReference: 'https://todayinsci.com/M/Meitner_Lise/MeitnerLise-Quotations.htm'
+      quoteReference: 'https://todayinsci.com/M/Meitner_Lise/MeitnerLise-Quotations.htm',
     },
     {
       id: 'sophia-brahe',
@@ -371,19 +395,20 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Sophie_Brahe_portrait.jpg',
       tags: ['astronomy', 'horticulture', 'observational-astronomy', 'danish', 'renaissance'],
-      groupMemberships: ['danish-astronomy', 'renaissance-science']
+      groupMemberships: ['danish-astronomy', 'renaissance-science'],
     },
     {
       id: 'maria-sibylla-merian',
       fullName: 'Maria Sibylla Merian',
       dateOfBirth: new Date('1647-04-02'),
       pronouns: 'she/her',
-      bio: 'Maria Sibylla Merian\'s detailed illustrations of insects and their life cycles, particularly her work on the metamorphosis of butterflies, revolutionized the study of entomology in the late 17th and early 18th centuries. Her scientific expedition to Suriname, undertaken at age 52, produced meticulous documentation of tropical flora and fauna that remained scientifically valuable for centuries. She combined artistic skill with scientific observation in ways that established new standards for natural history illustration.',
+      bio: "Maria Sibylla Merian's detailed illustrations of insects and their life cycles, particularly her work on the metamorphosis of butterflies, revolutionized the study of entomology in the late 17th and early 18th centuries. Her scientific expedition to Suriname, undertaken at age 52, produced meticulous documentation of tropical flora and fauna that remained scientifically valuable for centuries. She combined artistic skill with scientific observation in ways that established new standards for natural history illustration.",
       email: 'maria.merian@german-natural-history.test',
       phone: null,
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/a/a6/Bildnis_der_Maria_Sibylla_Merian%2C_1679.jpg',
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/a/a6/Bildnis_der_Maria_Sibylla_Merian%2C_1679.jpg',
       tags: ['biology', 'entomology', 'botany', 'german', 'scientific-illustration'],
-      groupMemberships: ['german-natural-history', 'entomology-research']
+      groupMemberships: ['german-natural-history', 'entomology-research'],
     },
     {
       id: 'elena-cornaro-piscopia',
@@ -395,7 +420,7 @@ export const stemAchievementsData: DataPackage = {
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Elena_Piscopia_portrait.jpg',
       tags: ['mathematics', 'philosophy', 'italian', 'seventeenth-century', 'academia'],
-      groupMemberships: ['italian-mathematics', 'padua-university']
+      groupMemberships: ['italian-mathematics', 'padua-university'],
     },
     {
       id: 'srinivasa-ramanujan',
@@ -406,7 +431,7 @@ export const stemAchievementsData: DataPackage = {
       givenName: 'श्रीनिवास',
       surname: 'रामानुजन',
       englishName: 'Srinivasa Ramanujan',
-      bio: 'Srinivasa Ramanujan made extraordinary contributions to mathematical analysis, number theory, infinite series, and continued fractions despite having almost no formal training in pure mathematics. Working largely in isolation in India before collaborating with G. H. Hardy at Cambridge, he produced thousands of mathematical results that continue to inspire research today. His notebooks, filled with theorems and formulae, revealed insights that were decades ahead of their time and established him as one of history\'s greatest mathematical minds.',
+      bio: "Srinivasa Ramanujan made extraordinary contributions to mathematical analysis, number theory, infinite series, and continued fractions despite having almost no formal training in pure mathematics. Working largely in isolation in India before collaborating with G. H. Hardy at Cambridge, he produced thousands of mathematical results that continue to inspire research today. His notebooks, filled with theorems and formulae, revealed insights that were decades ahead of their time and established him as one of history's greatest mathematical minds.",
       email: 'ramanujan@cambridge.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
@@ -414,7 +439,8 @@ export const stemAchievementsData: DataPackage = {
       groupMemberships: ['cambridge-mathematics', 'indian-scientists'],
       reference: 'https://www.britannica.com/biography/Srinivasa-Ramanujan',
       quote: 'An equation for me has no meaning unless it expresses a thought of God.',
-      quoteReference: 'https://www.goodreads.com/work/quotes/1031423-the-man-who-knew-infinity-a-life-of-the-genius-ramanujan'
+      quoteReference:
+        'https://www.goodreads.com/work/quotes/1031423-the-man-who-knew-infinity-a-life-of-the-genius-ramanujan',
     },
     {
       id: 'cv-raman',
@@ -433,7 +459,7 @@ export const stemAchievementsData: DataPackage = {
       groupMemberships: ['indian-scientists', 'nobel-laureates', 'physics-research'],
       reference: 'https://www.nobelprize.org/prizes/physics/1930/raman/biographical/',
       quote: 'The essence of science is independent thinking, hard work, and not equipment.',
-      quoteReference: 'https://www.brainyquote.com/authors/c-v-raman-quotes'
+      quoteReference: 'https://www.brainyquote.com/authors/c-v-raman-quotes',
     },
     {
       id: 'a-p-j-abdul-kalam',
@@ -447,8 +473,9 @@ export const stemAchievementsData: DataPackage = {
       tags: ['aerospace-engineering', 'missiles', 'indian', 'president', 'nuclear-technology'],
       groupMemberships: ['indian-scientists', 'aerospace-research', 'drdo'],
       reference: 'https://www.britannica.com/biography/A-P-J-Abdul-Kalam',
-      quote: 'I wonder why some people tend to see science as something which takes man away from God. As I look at it, the path of science can always wind through the heart.',
-      quoteReference: 'https://www.goodreads.com/work/quotes/620871-wings-of-fire-an-autobiography'
+      quote:
+        'I wonder why some people tend to see science as something which takes man away from God. As I look at it, the path of science can always wind through the heart.',
+      quoteReference: 'https://www.goodreads.com/work/quotes/620871-wings-of-fire-an-autobiography',
     },
     {
       id: 'bj-habibie',
@@ -456,13 +483,19 @@ export const stemAchievementsData: DataPackage = {
       dateOfBirth: new Date('1936-06-25'),
       pronouns: 'he/him',
       preferredName: 'B.J. Habibie',
-      bio: 'B.J. Habibie was an Indonesian aerospace engineer who made significant contributions to aircraft design, particularly in thermodynamics, construction, and aerodynamics. After earning his doctorate in engineering from RWTH Aachen University in Germany, he worked for Messerschmitt-Bölkow-Blohm, where he developed theories on crack propagation in aircraft structures. Returning to Indonesia, he founded the national aircraft industry (IPTN) and led the development of the N-250 turboprop aircraft. His engineering expertise earned him international recognition before he became Indonesia\'s third president.',
+      bio: "B.J. Habibie was an Indonesian aerospace engineer who made significant contributions to aircraft design, particularly in thermodynamics, construction, and aerodynamics. After earning his doctorate in engineering from RWTH Aachen University in Germany, he worked for Messerschmitt-Bölkow-Blohm, where he developed theories on crack propagation in aircraft structures. Returning to Indonesia, he founded the national aircraft industry (IPTN) and led the development of the N-250 turboprop aircraft. His engineering expertise earned him international recognition before he became Indonesia's third president.",
       email: 'bj.habibie@iptn.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
-      tags: ['aerospace-engineering', 'aircraft-design', 'indonesian', 'thermodynamics', 'aerodynamics'],
+      tags: [
+        'aerospace-engineering',
+        'aircraft-design',
+        'indonesian',
+        'thermodynamics',
+        'aerodynamics',
+      ],
       groupMemberships: ['indonesian-scientists', 'aerospace-research', 'southeast-asian-research'],
-      reference: 'https://en.wikipedia.org/wiki/B._J._Habibie'
+      reference: 'https://en.wikipedia.org/wiki/B._J._Habibie',
     },
     {
       id: 'flossie-wong-staal',
@@ -475,35 +508,37 @@ export const stemAchievementsData: DataPackage = {
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['virology', 'hiv-aids', 'genetics', 'chinese-american', 'medical-research'],
       groupMemberships: ['medical-researchers', 'virology-research', 'scripps-research'],
-      reference: 'https://www.scripps.edu/news-events/press-room/2020/20200715-wong-staal.html'
+      reference: 'https://www.scripps.edu/news-events/press-room/2020/20200715-wong-staal.html',
     },
     {
       id: 'cheikh-anta-diop',
       fullName: 'Cheikh Anta Diop',
       dateOfBirth: new Date('1923-12-29'),
       pronouns: 'he/him',
-      bio: 'Cheikh Anta Diop was a Senegalese historian, anthropologist, and physicist who revolutionized the study of ancient African civilizations through scientific methods. He created and directed the radiocarbon dating laboratory at IFAN (Institut Fondamental d\'Afrique Noire) and used melanin analysis to demonstrate that ancient Egyptians were Black Africans. His multidisciplinary approach, combining physics, chemistry, and archaeology, challenged Eurocentric historical narratives and established African contributions to world civilization on scientific grounds.',
+      bio: "Cheikh Anta Diop was a Senegalese historian, anthropologist, and physicist who revolutionized the study of ancient African civilizations through scientific methods. He created and directed the radiocarbon dating laboratory at IFAN (Institut Fondamental d'Afrique Noire) and used melanin analysis to demonstrate that ancient Egyptians were Black Africans. His multidisciplinary approach, combining physics, chemistry, and archaeology, challenged Eurocentric historical narratives and established African contributions to world civilization on scientific grounds.",
       email: 'ca.diop@dakar.test',
       phone: null,
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Cheikh_Anta_Diop%2C_late_1940s.jpg',
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/8/83/Cheikh_Anta_Diop%2C_late_1940s.jpg',
       tags: ['physics', 'archaeology', 'senegalese', 'carbon-dating', 'african-history'],
       groupMemberships: ['african-scientists', 'archaeology-research', 'dakar-university'],
-      reference: 'https://en.wikipedia.org/wiki/Cheikh_Anta_Diop'
+      reference: 'https://en.wikipedia.org/wiki/Cheikh_Anta_Diop',
     },
     {
       id: 'wangari-maathai-scientist',
       fullName: 'Wangari Muta Maathai',
       dateOfBirth: new Date('1940-04-01'),
       pronouns: 'she/her',
-      bio: 'Wangari Maathai was a Kenyan environmental scientist who founded the Green Belt Movement, combining environmental conservation with community empowerment and women\'s rights. With a Ph.D. from the University of Nairobi, where she also taught veterinary anatomy, she understood that deforestation and environmental degradation were interconnected with poverty and social injustice. Her scientific approach to reforestation, focusing on indigenous tree species and community-based conservation, earned her the Nobel Peace Prize in 2004 and established her as a pioneer in sustainable development.',
+      bio: "Wangari Maathai was a Kenyan environmental scientist who founded the Green Belt Movement, combining environmental conservation with community empowerment and women's rights. With a Ph.D. from the University of Nairobi, where she also taught veterinary anatomy, she understood that deforestation and environmental degradation were interconnected with poverty and social injustice. Her scientific approach to reforestation, focusing on indigenous tree species and community-based conservation, earned her the Nobel Peace Prize in 2004 and established her as a pioneer in sustainable development.",
       email: 'w.maathai@greenbelt.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Wangari_Maathai_in_2001.jpg',
       tags: ['environmental-science', 'forestry', 'kenyan', 'nobel-prize', 'sustainability'],
       groupMemberships: ['african-scientists', 'environmental-researchers', 'green-belt-movement'],
       reference: 'https://www.nobelprize.org/prizes/peace/2004/maathai/biographical/',
-      quote: 'In the course of history, there comes a time when humanity is called to shift to a new level of consciousness, to reach a higher moral ground. A time when we have to shed our fear and give hope to each other. That time is now.',
-      quoteReference: 'https://www.nobelprize.org/prizes/peace/2004/maathai/lecture/'
+      quote:
+        'In the course of history, there comes a time when humanity is called to shift to a new level of consciousness, to reach a higher moral ground. A time when we have to shed our fear and give hope to each other. That time is now.',
+      quoteReference: 'https://www.nobelprize.org/prizes/peace/2004/maathai/lecture/',
     },
     {
       id: 'thomas-adeoye-lambo',
@@ -513,23 +548,30 @@ export const stemAchievementsData: DataPackage = {
       bio: 'Thomas Adeoye Lambo was a Nigerian psychiatrist who revolutionized mental health care in Africa and globally as the first African to lead the World Health Organization\'s mental health program. He integrated traditional African healing practices with modern psychiatry, developing the "Aro Village System" which treated mental illness within community settings rather than isolated institutions. His innovative approach influenced global mental health policy and demonstrated how indigenous knowledge could enhance modern medical practice.',
       email: 't.lambo@who.test',
       phone: null,
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Professor_Thomas_Lambo%2C_Psychiatrist_and_Deputy_Director-General_of_the_World_Health_Organisation_%28WHO%29_on_the_28th_of_November%2C_1997.jpg',
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/9/91/Professor_Thomas_Lambo%2C_Psychiatrist_and_Deputy_Director-General_of_the_World_Health_Organisation_%28WHO%29_on_the_28th_of_November%2C_1997.jpg',
       tags: ['psychiatry', 'mental-health', 'nigerian', 'who', 'community-care'],
       groupMemberships: ['african-scientists', 'medical-researchers', 'who-mental-health'],
-      reference: 'https://www.who.int/news-room/feature-stories/detail/thomas-adeoye-lambo'
+      reference: 'https://www.who.int/news-room/feature-stories/detail/thomas-adeoye-lambo',
     },
     {
       id: 'quarraisha-abdool-karim',
       fullName: 'Quarraisha Abdool Karim',
       dateOfBirth: new Date('1960-07-29'),
       pronouns: 'she/her',
-      bio: 'Quarraisha Abdool Karim is a South African infectious diseases epidemiologist who has led groundbreaking research on HIV prevention, particularly focusing on women and adolescents in Africa. Her work on microbicides and pre-exposure prophylaxis (PrEP) has provided crucial tools for HIV prevention in populations most at risk. As one of Africa\'s leading scientists, she has shaped global HIV research policy and demonstrated how locally-conducted research can address global health challenges.',
+      bio: "Quarraisha Abdool Karim is a South African infectious diseases epidemiologist who has led groundbreaking research on HIV prevention, particularly focusing on women and adolescents in Africa. Her work on microbicides and pre-exposure prophylaxis (PrEP) has provided crucial tools for HIV prevention in populations most at risk. As one of Africa's leading scientists, she has shaped global HIV research policy and demonstrated how locally-conducted research can address global health challenges.",
       email: 'q.abdoolkarim@caprisa.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Quarraisha_Abdool_Karim.jpg',
-      tags: ['epidemiology', 'hiv-prevention', 'south-african', 'infectious-diseases', 'public-health'],
+      tags: [
+        'epidemiology',
+        'hiv-prevention',
+        'south-african',
+        'infectious-diseases',
+        'public-health',
+      ],
       groupMemberships: ['african-scientists', 'medical-researchers', 'caprisa'],
-      reference: 'https://www.caprisa.org/about-us/leadership/prof-quarraisha-abdool-karim'
+      reference: 'https://www.caprisa.org/about-us/leadership/prof-quarraisha-abdool-karim',
     },
     {
       id: 'christina-koch',
@@ -540,167 +582,196 @@ export const stemAchievementsData: DataPackage = {
       email: 'christina.koch@nasa.test',
       phone: '+1-555-483-0000',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Jsc2023e0016435_alt.jpg',
-      tags: ['electrical-engineering', 'aerospace-engineering', 'nasa', 'space-exploration', 'artemis'],
+      tags: [
+        'electrical-engineering',
+        'aerospace-engineering',
+        'nasa',
+        'space-exploration',
+        'artemis',
+      ],
       groupMemberships: ['nasa-engineering', 'artemis-program', 'johnson-space-center'],
-      reference: 'https://www.nasa.gov/people/christina-koch/'
+      reference: 'https://www.nasa.gov/people/christina-koch/',
     },
     {
       id: 'victor-glover',
       fullName: 'Victor Jerome Glover Jr.',
       dateOfBirth: new Date('1976-04-30'),
       pronouns: 'he/him',
-      bio: 'Piloting the Artemis II spacecraft on its lunar flyby in April 2026, Victor Glover became the first Black astronaut to fly to the Moon. A United States Navy commander and graduate test pilot, he holds a bachelor\'s degree in general engineering from Cal Poly San Luis Obispo and three master\'s degrees spanning flight test engineering, systems engineering, and military operational art and science, and has logged over 3,000 flight hours across more than forty aircraft types. As pilot of SpaceX Crew Dragon\'s first operational crewed mission in 2020, he was the first African American to serve as a long-duration crew member aboard the International Space Station.',
+      bio: "Piloting the Artemis II spacecraft on its lunar flyby in April 2026, Victor Glover became the first Black astronaut to fly to the Moon. A United States Navy commander and graduate test pilot, he holds a bachelor's degree in general engineering from Cal Poly San Luis Obispo and three master's degrees spanning flight test engineering, systems engineering, and military operational art and science, and has logged over 3,000 flight hours across more than forty aircraft types. As pilot of SpaceX Crew Dragon's first operational crewed mission in 2020, he was the first African American to serve as a long-duration crew member aboard the International Space Station.",
       email: 'victor.glover@nasa.test',
       phone: '+1-555-483-0000',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Jsc2023e0016433_alt.jpg',
       tags: ['aerospace-engineering', 'systems-engineering', 'nasa', 'african-american', 'artemis'],
-      groupMemberships: ['nasa-engineering', 'artemis-program', 'johnson-space-center', 'african-american-scientists'],
-      reference: 'https://www.nasa.gov/people/victor-j-glover-jr/'
+      groupMemberships: [
+        'nasa-engineering',
+        'artemis-program',
+        'johnson-space-center',
+        'african-american-scientists',
+      ],
+      reference: 'https://www.nasa.gov/people/victor-j-glover-jr/',
     },
     {
       id: 'jessica-watkins',
       fullName: 'Jessica Andrea Watkins',
       dateOfBirth: new Date('1988-05-14'),
       pronouns: 'she/her',
-      bio: 'In April 2022, Jessica Watkins became the first Black woman to serve on a long-duration mission aboard the International Space Station, spending 170 days in orbit as a mission specialist on NASA\'s SpaceX Crew-4 flight. A planetary geologist with a PhD from UCLA, she served on the science team operating the Curiosity rover on Mars and was a postdoctoral fellow at Caltech before her selection as an astronaut in 2017. She is part of the active astronaut corps eligible for future Artemis lunar missions, and her record-setting ISS tour expanded the catalogue of Black women in long-duration spaceflight.',
+      bio: "In April 2022, Jessica Watkins became the first Black woman to serve on a long-duration mission aboard the International Space Station, spending 170 days in orbit as a mission specialist on NASA's SpaceX Crew-4 flight. A planetary geologist with a PhD from UCLA, she served on the science team operating the Curiosity rover on Mars and was a postdoctoral fellow at Caltech before her selection as an astronaut in 2017. She is part of the active astronaut corps eligible for future Artemis lunar missions, and her record-setting ISS tour expanded the catalogue of Black women in long-duration spaceflight.",
       email: 'jessica.watkins@nasa.test',
       phone: '+1-555-483-0000',
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Jessica_Watkins_Astronaut_portrait_%28cropped%29.jpg',
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/d/dd/Jessica_Watkins_Astronaut_portrait_%28cropped%29.jpg',
       tags: ['geology', 'planetary-science', 'nasa', 'african-american', 'space-exploration'],
       groupMemberships: ['nasa-engineering', 'johnson-space-center', 'african-american-scientists'],
-      reference: 'https://www.nasa.gov/people/jessica-watkins/'
+      reference: 'https://www.nasa.gov/people/jessica-watkins/',
     },
     {
       id: 'vanessa-wyche',
       fullName: 'Vanessa E. Wyche',
       pronouns: 'she/her',
-      bio: 'Vanessa Wyche serves as director of NASA\'s Johnson Space Center in Houston, overseeing astronaut selection and training, the Mission Control Center, and the program offices for Orion, the International Space Station, Gateway, and the Artemis lunar missions including the crewed Artemis II flight. Her appointment in 2021 made her the first African American woman to lead any NASA centre; in 2025 she was named acting Associate Administrator, the highest-ranking civil-servant position at the agency. A bioengineer educated at Clemson University, she has spent more than three decades at NASA in roles ranging from Space Shuttle flight manager to director of the Exploration Integration and Science Directorate.',
+      bio: "Vanessa Wyche serves as director of NASA's Johnson Space Center in Houston, overseeing astronaut selection and training, the Mission Control Center, and the program offices for Orion, the International Space Station, Gateway, and the Artemis lunar missions including the crewed Artemis II flight. Her appointment in 2021 made her the first African American woman to lead any NASA centre; in 2025 she was named acting Associate Administrator, the highest-ranking civil-servant position at the agency. A bioengineer educated at Clemson University, she has spent more than three decades at NASA in roles ranging from Space Shuttle flight manager to director of the Exploration Integration and Science Directorate.",
       email: 'vanessa.wyche@nasa.test',
       phone: '+1-555-483-0000',
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/dc/Vanessa_E._Wyche_in_2022.jpg',
       tags: ['bioengineering', 'nasa', 'leadership', 'african-american', 'artemis'],
-      groupMemberships: ['nasa-engineering', 'johnson-space-center', 'artemis-program', 'african-american-scientists'],
-      reference: 'https://www.nasa.gov/people/vanessa-e-wyche/'
+      groupMemberships: [
+        'nasa-engineering',
+        'johnson-space-center',
+        'artemis-program',
+        'african-american-scientists',
+      ],
+      reference: 'https://www.nasa.gov/people/vanessa-e-wyche/',
     },
     {
       id: 'charlie-blackwell-thompson',
       fullName: 'Charlie Blackwell-Thompson',
       pronouns: 'she/her',
-      bio: 'As NASA\'s first female launch director, Charlie Blackwell-Thompson commanded the countdown and liftoff of the Space Launch System and Orion spacecraft for both the uncrewed Artemis I flight in 2022 and the crewed Artemis II mission in April 2026. A computer engineer educated at Clemson University, she leads the launch team for the agency\'s Exploration Ground Systems Program at Kennedy Space Center and holds multiple patents related to launch vehicle interface standardisation and command and control systems. Before her launch director role she served as chief NASA test director through the conclusion of the Space Shuttle Program and as assistant launch director for STS-133.',
+      bio: "As NASA's first female launch director, Charlie Blackwell-Thompson commanded the countdown and liftoff of the Space Launch System and Orion spacecraft for both the uncrewed Artemis I flight in 2022 and the crewed Artemis II mission in April 2026. A computer engineer educated at Clemson University, she leads the launch team for the agency's Exploration Ground Systems Program at Kennedy Space Center and holds multiple patents related to launch vehicle interface standardisation and command and control systems. Before her launch director role she served as chief NASA test director through the conclusion of the Space Shuttle Program and as assistant launch director for STS-133.",
       email: 'charlie.blackwell-thompson@nasa.test',
       phone: '+1-555-867-0000',
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Charlie_Blackwell-Thompson_NASA_Portrait.jpg',
+      picture:
+        'https://upload.wikimedia.org/wikipedia/commons/7/7f/Charlie_Blackwell-Thompson_NASA_Portrait.jpg',
       tags: ['computer-engineering', 'nasa', 'leadership', 'artemis', 'space-exploration'],
       groupMemberships: ['kennedy-space-center', 'exploration-ground-systems', 'artemis-program'],
-      reference: 'https://www.nasa.gov/people/kennedy-biographies-blackwell-thompson/'
+      reference: 'https://www.nasa.gov/people/kennedy-biographies-blackwell-thompson/',
     },
     {
       id: 'robin-witt',
       fullName: 'Robin Witt',
       pronouns: 'she/her',
-      bio: 'As an electrical engineer at NASA contractor ERC at Kennedy Space Center, Robin Witt contributed to the integration and testing work that prepared the Space Launch System for the Artemis I uncrewed test flight in 2022, the foundational mission whose success cleared the path for the crewed Artemis II flight. After living in Florida since elementary school, she resigned her position in 2023 and relocated to Chicago, citing concerns for her safety as a transgender woman under the state\'s expanding anti-transgender legislation. She has continued her aerospace and defence engineering career, working subsequently as an Energetics Manufacturing Engineer at Northrop Grumman.',
+      bio: "As an electrical engineer at NASA contractor ERC at Kennedy Space Center, Robin Witt contributed to the integration and testing work that prepared the Space Launch System for the Artemis I uncrewed test flight in 2022, the foundational mission whose success cleared the path for the crewed Artemis II flight. After living in Florida since elementary school, she resigned her position in 2023 and relocated to Chicago, citing concerns for her safety as a transgender woman under the state's expanding anti-transgender legislation. She has continued her aerospace and defence engineering career, working subsequently as an Energetics Manufacturing Engineer at Northrop Grumman.",
       email: 'robin.witt@artemis-engineers.test',
       phone: null,
       picture: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg',
       tags: ['electrical-engineering', 'aerospace-engineering', 'transgender', 'lgbtq', 'artemis'],
       groupMemberships: ['kennedy-space-center', 'artemis-program', 'northrop-grumman'],
-      reference: 'https://futurism.com/the-byte/nasa-engineer-quit-transgender'
+      reference: 'https://futurism.com/the-byte/nasa-engineer-quit-transgender',
     },
     {
       id: 'amy-lendian',
       fullName: 'Amy Lendian',
       pronouns: 'she/her',
-      bio: 'Brought out of retirement to support the Artemis II flight in April 2026, Amy Lendian served as acting systems engineering supervisor in NASA\'s launch control firing room at Kennedy Space Center, leading a team of four engineers responsible for monitoring water, electrical, and fire-suppression subsystems during the countdown to the first crewed flight of the Space Launch System and Orion spacecraft. Her decades of NASA launch experience placed her at the console for one of the most consequential moments of the Artemis programme. Her continued contribution illustrates the depth of institutional knowledge that veteran women engineers bring to active human spaceflight programmes.',
+      bio: "Brought out of retirement to support the Artemis II flight in April 2026, Amy Lendian served as acting systems engineering supervisor in NASA's launch control firing room at Kennedy Space Center, leading a team of four engineers responsible for monitoring water, electrical, and fire-suppression subsystems during the countdown to the first crewed flight of the Space Launch System and Orion spacecraft. Her decades of NASA launch experience placed her at the console for one of the most consequential moments of the Artemis programme. Her continued contribution illustrates the depth of institutional knowledge that veteran women engineers bring to active human spaceflight programmes.",
       email: 'amy.lendian@nasa.test',
       phone: '+1-555-867-0000',
-      picture: 'https://www.nasa.gov/wp-content/uploads/2023/07/amylendian_ksc-20230530-ph-kls01_0018.jpg',
+      picture:
+        'https://www.nasa.gov/wp-content/uploads/2023/07/amylendian_ksc-20230530-ph-kls01_0018.jpg',
       tags: ['systems-engineering', 'nasa', 'artemis', 'space-exploration', 'leadership'],
       groupMemberships: ['kennedy-space-center', 'exploration-ground-systems', 'artemis-program'],
-      reference: 'https://www.nasa.gov/image-article/systems-engineering-supervisor-amy-lendian/'
-    }
+      reference: 'https://www.nasa.gov/image-article/systems-engineering-supervisor-amy-lendian/',
+    },
   ],
   groups: [
     {
       id: 'nasa-mathematics',
       name: 'NASA Mathematics Division',
-      about: 'The mathematics division at NASA responsible for orbital calculations, trajectory analysis, and mathematical modeling for space missions.',
+      about:
+        'The mathematics division at NASA responsible for orbital calculations, trajectory analysis, and mathematical modeling for space missions.',
       email: 'mathematics@nasa.test',
       website: 'https://www.nasa.gov/mathematics',
       picture: 'https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png',
-      reference: 'https://www.nasa.gov/centers/langley/about/'
+      reference: 'https://www.nasa.gov/centers/langley/about/',
     },
     {
       id: 'african-american-scientists',
       name: 'African American Scientists Network',
-      about: 'A professional network supporting African American scientists and engineers in their careers and research.',
+      about:
+        'A professional network supporting African American scientists and engineers in their careers and research.',
       email: 'info@africanamericanscientists.test',
       website: 'https://africanamericanscientists.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'columbia-physics',
       name: 'Columbia University Physics Department',
-      about: 'The physics department at Columbia University, known for groundbreaking research in particle physics and nuclear physics.',
+      about:
+        'The physics department at Columbia University, known for groundbreaking research in particle physics and nuclear physics.',
       email: 'physics@columbia.test',
       website: 'https://physics.columbia.edu',
       picture: 'https://physics.columbia.edu/sites/default/files/content/Columbia_Physics_Logo.png',
-      reference: 'https://physics.columbia.edu/'
+      reference: 'https://physics.columbia.edu/',
     },
     {
       id: 'experimental-physicists',
       name: 'Experimental Physics Society',
-      about: 'Professional society for experimental physicists working in nuclear physics, particle physics, and related fields.',
+      about:
+        'Professional society for experimental physicists working in nuclear physics, particle physics, and related fields.',
       email: 'contact@experimentalphysics.test',
       website: 'https://experimentalphysics.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'computer-pioneers',
       name: 'Computer Pioneers Association',
-      about: 'Organization recognizing and preserving the history of early computer scientists and programmers.',
+      about:
+        'Organization recognizing and preserving the history of early computer scientists and programmers.',
       email: 'info@computerpioneers.test',
       website: 'https://computerpioneers.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'mathematical-history',
       name: 'Mathematical History Society',
-      about: 'Society dedicated to studying and preserving the history of mathematics and mathematical discoveries.',
+      about:
+        'Society dedicated to studying and preserving the history of mathematics and mathematical discoveries.',
       email: 'contact@mathhistory.test',
       website: 'https://mathhistory.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'sorbonne-physics',
       name: 'Sorbonne University Physics Department',
-      about: 'The physics department at Sorbonne University, continuing the legacy of Marie Curie\'s research.',
+      about:
+        "The physics department at Sorbonne University, continuing the legacy of Marie Curie's research.",
       email: 'physique@sorbonne-universite.test',
       website: 'https://www.sorbonne-universite.fr/physics',
-      picture: null
+      picture: null,
     },
     {
       id: 'radioactivity-research',
       name: 'Radioactivity Research Institute',
-      about: 'Research institute focused on the study of radioactive materials and their applications in medicine and industry.',
+      about:
+        'Research institute focused on the study of radioactive materials and their applications in medicine and industry.',
       email: 'research@radioactivity.test',
       website: 'https://radioactivity.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'west-area-computing',
       name: 'West Area Computing Unit',
-      about: 'The computing unit at NASA\'s Langley Research Center where African American women mathematicians performed crucial calculations.',
+      about:
+        "The computing unit at NASA's Langley Research Center where African American women mathematicians performed crucial calculations.",
       email: 'computing@nasa.test',
       website: 'https://www.nasa.gov/langley',
-      picture: null
+      picture: null,
     },
     {
       id: 'navy-computing',
       name: 'US Navy Computing Division',
-      about: 'The computing division of the United States Navy, responsible for military computing and programming.',
+      about:
+        'The computing division of the United States Navy, responsible for military computing and programming.',
       email: 'computing@navy.test',
       website: 'https://www.navy.mil/computing',
-      picture: null
+      picture: null,
     },
     {
       id: 'programming-pioneers',
@@ -708,63 +779,70 @@ export const stemAchievementsData: DataPackage = {
       about: 'Professional society honoring early computer programmers and software engineers.',
       email: 'info@programmingpioneers.test',
       website: 'https://programmingpioneers.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'kings-college-chemistry',
-      name: 'King\'s College London Chemistry Department',
-      about: 'The chemistry department at King\'s College London, known for research in molecular biology and crystallography.',
+      name: "King's College London Chemistry Department",
+      about:
+        "The chemistry department at King's College London, known for research in molecular biology and crystallography.",
       email: 'chemistry@kcl.test',
       website: 'https://www.kcl.ac.uk/chemistry',
-      picture: null
+      picture: null,
     },
     {
       id: 'molecular-biology-research',
       name: 'Molecular Biology Research Institute',
-      about: 'Research institute focused on the molecular basis of biological processes and structures.',
+      about:
+        'Research institute focused on the molecular basis of biological processes and structures.',
       email: 'research@molecularbiology.test',
       website: 'https://molecularbiology.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'rpi-physics',
       name: 'Rensselaer Polytechnic Institute Physics Department',
-      about: 'The physics department at RPI, known for research in theoretical physics and materials science.',
+      about:
+        'The physics department at RPI, known for research in theoretical physics and materials science.',
       email: 'physics@rpi.test',
       website: 'https://science.rpi.edu/physics',
-      picture: null
+      picture: null,
     },
     {
       id: 'mit-alumni',
       name: 'MIT Alumni Association',
-      about: 'Alumni association for the Massachusetts Institute of Technology, supporting graduates in their careers.',
+      about:
+        'Alumni association for the Massachusetts Institute of Technology, supporting graduates in their careers.',
       email: 'alumni@mit.test',
       website: 'https://alum.mit.edu',
-      picture: null
+      picture: null,
     },
     {
       id: 'nasa-engineering',
       name: 'NASA Engineering Division',
-      about: 'The engineering division at NASA responsible for spacecraft design, testing, and mission support.',
+      about:
+        'The engineering division at NASA responsible for spacecraft design, testing, and mission support.',
       email: 'engineering@nasa.test',
       website: 'https://www.nasa.gov/engineering',
-      picture: null
+      picture: null,
     },
     {
       id: 'space-shuttle-program',
       name: 'Space Shuttle Program',
-      about: 'NASA\'s Space Shuttle program that operated from 1981 to 2011, enabling human spaceflight and scientific research.',
+      about:
+        "NASA's Space Shuttle program that operated from 1981 to 2011, enabling human spaceflight and scientific research.",
       email: 'shuttle@nasa.test',
       website: 'https://www.nasa.gov/space-shuttle',
-      picture: null
+      picture: null,
     },
     {
       id: 'janegoodall-institute',
       name: 'Jane Goodall Institute',
-      about: 'Non-profit organization founded by Jane Goodall dedicated to wildlife research, education, and conservation.',
+      about:
+        'Non-profit organization founded by Jane Goodall dedicated to wildlife research, education, and conservation.',
       email: 'info@janegoodall.test',
       website: 'https://www.janegoodall.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'primatology-research',
@@ -772,71 +850,79 @@ export const stemAchievementsData: DataPackage = {
       about: 'Professional society for researchers studying primates and their behavior.',
       email: 'contact@primatology.test',
       website: 'https://primatology.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'cern-physics',
       name: 'CERN Physics Division',
-      about: 'The physics division at CERN, the European Organization for Nuclear Research, conducting particle physics experiments.',
+      about:
+        'The physics division at CERN, the European Organization for Nuclear Research, conducting particle physics experiments.',
       email: 'physics@cern.test',
       website: 'https://home.cern/science/physics',
-      picture: null
+      picture: null,
     },
     {
       id: 'particle-detection',
       name: 'Particle Detection Research Group',
-      about: 'Research group focused on developing and improving particle detectors for high-energy physics experiments.',
+      about:
+        'Research group focused on developing and improving particle detectors for high-energy physics experiments.',
       email: 'detection@particlephysics.test',
       website: 'https://particlephysics.org/detection',
-      picture: null
+      picture: null,
     },
     {
       id: 'psychology-research',
       name: 'Psychology Research Institute',
-      about: 'Research institute conducting studies in social psychology, child development, and educational psychology.',
+      about:
+        'Research institute conducting studies in social psychology, child development, and educational psychology.',
       email: 'research@psychology.test',
       website: 'https://psychology.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'education-psychology',
       name: 'Educational Psychology Association',
-      about: 'Professional association for psychologists working in educational settings and research.',
+      about:
+        'Professional association for psychologists working in educational settings and research.',
       email: 'info@edpsychology.test',
       website: 'https://edpsychology.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'carnegie-observatories',
       name: 'Carnegie Observatories',
-      about: 'Research organization operating astronomical observatories and conducting research in astronomy and astrophysics.',
+      about:
+        'Research organization operating astronomical observatories and conducting research in astronomy and astrophysics.',
       email: 'info@carnegieobservatories.test',
       website: 'https://carnegieobservatories.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'dark-matter-research',
       name: 'Dark Matter Research Consortium',
-      about: 'International consortium of researchers studying dark matter and its role in the universe.',
+      about:
+        'International consortium of researchers studying dark matter and its role in the universe.',
       email: 'research@darkmatter.test',
       website: 'https://darkmatter.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'lewis-research-center',
       name: 'NASA Glenn Research Center',
-      about: 'NASA research center in Cleveland, Ohio, focused on aeronautics and space technology development.',
+      about:
+        'NASA research center in Cleveland, Ohio, focused on aeronautics and space technology development.',
       email: 'info@nasa.test',
       website: 'https://www.nasa.gov/glenn',
-      picture: null
+      picture: null,
     },
     {
       id: 'brynmawr-mathematics',
       name: 'Bryn Mawr College Mathematics Department',
-      about: 'The mathematics department at Bryn Mawr College, known for its commitment to women\'s mathematical education.',
+      about:
+        "The mathematics department at Bryn Mawr College, known for its commitment to women's mathematical education.",
       email: 'math@brynmawr.test',
       website: 'https://www.brynmawr.edu/mathematics',
-      picture: null
+      picture: null,
     },
     {
       id: 'mathematical-education',
@@ -844,159 +930,178 @@ export const stemAchievementsData: DataPackage = {
       about: 'Professional society promoting excellence in mathematics education at all levels.',
       email: 'info@matheducation.test',
       website: 'https://matheducation.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'langley-research-center',
       name: 'NASA Langley Research Center',
-      about: 'NASA research center in Hampton, Virginia, focused on aeronautics research and technology development.',
+      about:
+        'NASA research center in Hampton, Virginia, focused on aeronautics research and technology development.',
       email: 'info@nasa.test',
       website: 'https://www.nasa.gov/langley',
-      picture: null
+      picture: null,
     },
     {
       id: 'french-mathematics',
       name: 'French Mathematical Society',
-      about: 'Professional society for mathematicians in France, promoting mathematical research and education.',
+      about:
+        'Professional society for mathematicians in France, promoting mathematical research and education.',
       email: 'contact@frenchmathematics.test',
       website: 'https://frenchmathematics.fr',
-      picture: null
+      picture: null,
     },
     {
       id: 'german-mathematics',
       name: 'German Mathematical Society',
-      about: 'Professional society for mathematicians in Germany, advancing mathematical research and collaboration.',
+      about:
+        'Professional society for mathematicians in Germany, advancing mathematical research and collaboration.',
       email: 'contact@germanmathematics.test',
       website: 'https://germanmathematics.de',
-      picture: null
+      picture: null,
     },
     {
       id: 'russian-mathematics',
       name: 'Russian Mathematical Society',
-      about: 'Professional society for mathematicians in Russia, promoting mathematical research and international collaboration.',
+      about:
+        'Professional society for mathematicians in Russia, promoting mathematical research and international collaboration.',
       email: 'contact@russianmathematics.test',
       website: 'https://russianmathematics.ru',
-      picture: null
+      picture: null,
     },
     {
       id: 'chinese-astronomy',
       name: 'Chinese Astronomical Society',
-      about: 'Professional society for astronomers in China, advancing astronomical research and education.',
+      about:
+        'Professional society for astronomers in China, advancing astronomical research and education.',
       email: 'contact@chineseastronomy.test',
       website: 'https://chineseastronomy.cn',
-      picture: null
+      picture: null,
     },
     {
       id: 'royal-astronomical-society',
       name: 'Royal Astronomical Society',
-      about: 'Professional society for astronomers in the United Kingdom, promoting astronomical research and education.',
+      about:
+        'Professional society for astronomers in the United Kingdom, promoting astronomical research and education.',
       email: 'contact@ras.test',
       website: 'https://ras.org.uk',
-      picture: null
+      picture: null,
     },
     {
       id: 'stellar-astronomy-research',
       name: 'Stellar Astronomy Research Group',
-      about: 'Research group focused on the study of stars, stellar evolution, and stellar systems.',
+      about:
+        'Research group focused on the study of stars, stellar evolution, and stellar systems.',
       email: 'research@stellarastronomy.test',
       website: 'https://stellarastronomy.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'italian-mathematics',
       name: 'Italian Mathematical Society',
-      about: 'Professional society for mathematicians in Italy, advancing mathematical research and collaboration.',
+      about:
+        'Professional society for mathematicians in Italy, advancing mathematical research and collaboration.',
       email: 'contact@italianmathematics.test',
       website: 'https://italianmathematics.it',
-      picture: null
+      picture: null,
     },
     {
       id: 'oxford-chemistry',
       name: 'University of Oxford Chemistry Department',
-      about: 'The chemistry department at the University of Oxford, known for research in crystallography and biochemistry.',
+      about:
+        'The chemistry department at the University of Oxford, known for research in crystallography and biochemistry.',
       email: 'chemistry@ox.test',
       website: 'https://www.chem.ox.ac.uk',
-      picture: null
+      picture: null,
     },
     {
       id: 'crystallography-research',
       name: 'Crystallography Research Institute',
-      about: 'Research institute focused on the study of crystal structures and their applications in chemistry and biology.',
+      about:
+        'Research institute focused on the study of crystal structures and their applications in chemistry and biology.',
       email: 'research@crystallography.test',
       website: 'https://crystallography.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'vassar-astronomy',
       name: 'Vassar College Astronomy Department',
-      about: 'The astronomy department at Vassar College, known for its pioneering role in women\'s astronomy education.',
+      about:
+        "The astronomy department at Vassar College, known for its pioneering role in women's astronomy education.",
       email: 'astronomy@vassar.test',
       website: 'https://astronomy.vassar.edu',
-      picture: null
+      picture: null,
     },
     {
       id: 'american-astronomical-society',
       name: 'American Astronomical Society',
-      about: 'Professional society for astronomers in the United States, promoting astronomical research and education.',
+      about:
+        'Professional society for astronomers in the United States, promoting astronomical research and education.',
       email: 'contact@aas.test',
       website: 'https://aas.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'ancient-mathematics',
       name: 'Ancient Mathematics Society',
-      about: 'Society dedicated to studying and preserving the history of ancient mathematics and mathematical discoveries.',
+      about:
+        'Society dedicated to studying and preserving the history of ancient mathematics and mathematical discoveries.',
       email: 'contact@ancientmathematics.test',
       website: 'https://ancientmathematics.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'alexandria-school',
       name: 'Alexandria School of Mathematics',
-      about: 'Historical institution representing the mathematical and philosophical traditions of ancient Alexandria.',
+      about:
+        'Historical institution representing the mathematical and philosophical traditions of ancient Alexandria.',
       email: 'contact@alexandriaschool.test',
       website: 'https://alexandriaschool.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'nuclear-physics-research',
       name: 'Nuclear Physics Research Institute',
-      about: 'Research institute focused on the study of nuclear processes, radioactivity, and nuclear fission.',
+      about:
+        'Research institute focused on the study of nuclear processes, radioactivity, and nuclear fission.',
       email: 'research@nuclearphysics.test',
       website: 'https://nuclearphysics.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'austrian-physics',
       name: 'Austrian Physics Society',
-      about: 'Professional society for physicists in Austria, promoting physics research and education.',
+      about:
+        'Professional society for physicists in Austria, promoting physics research and education.',
       email: 'contact@austrianphysics.test',
       website: 'https://austrianphysics.at',
-      picture: null
+      picture: null,
     },
     {
       id: 'danish-astronomy',
       name: 'Danish Astronomical Society',
-      about: 'Professional society for astronomers in Denmark, promoting astronomical research and education.',
+      about:
+        'Professional society for astronomers in Denmark, promoting astronomical research and education.',
       email: 'contact@danishastronomy.test',
       website: 'https://danishastronomy.dk',
-      picture: null
+      picture: null,
     },
     {
       id: 'renaissance-science',
       name: 'Renaissance Science Society',
-      about: 'Society dedicated to studying and preserving the history of Renaissance science and scientific discoveries.',
+      about:
+        'Society dedicated to studying and preserving the history of Renaissance science and scientific discoveries.',
       email: 'contact@renaissancescience.test',
       website: 'https://renaissancescience.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'german-natural-history',
       name: 'German Natural History Society',
-      about: 'Professional society for naturalists and biologists in Germany, promoting research in natural history.',
+      about:
+        'Professional society for naturalists and biologists in Germany, promoting research in natural history.',
       email: 'contact@germannaturalhistory.test',
       website: 'https://germannaturalhistory.de',
-      picture: null
+      picture: null,
     },
     {
       id: 'entomology-research',
@@ -1004,127 +1109,142 @@ export const stemAchievementsData: DataPackage = {
       about: 'Research institute focused on the study of insects and their role in ecosystems.',
       email: 'research@entomology.test',
       website: 'https://entomology.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'padua-university',
       name: 'University of Padua',
-      about: 'One of the oldest universities in Europe, known for its contributions to mathematics and philosophy.',
+      about:
+        'One of the oldest universities in Europe, known for its contributions to mathematics and philosophy.',
       email: 'info@unipd.test',
       website: 'https://www.unipd.it',
-      picture: null
+      picture: null,
     },
     {
       id: 'indian-scientists',
       name: 'Indian Scientists Association',
-      about: 'Organization representing scientists and researchers from India, promoting scientific collaboration and excellence.',
+      about:
+        'Organization representing scientists and researchers from India, promoting scientific collaboration and excellence.',
       email: 'contact@indianscientists.test',
       website: 'https://indianscientists.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'indonesian-scientists',
       name: 'Indonesian Scientific Community',
-      about: 'Professional network for scientists and researchers in Indonesia, advancing scientific knowledge and innovation.',
+      about:
+        'Professional network for scientists and researchers in Indonesia, advancing scientific knowledge and innovation.',
       email: 'info@indonesianscience.test',
       website: 'https://indonesianscience.id',
-      picture: null
+      picture: null,
     },
     {
       id: 'african-scientists',
       name: 'African Academy of Sciences',
-      about: 'Continental organization promoting scientific research and development across Africa, fostering collaboration among African scientists.',
+      about:
+        'Continental organization promoting scientific research and development across Africa, fostering collaboration among African scientists.',
       email: 'contact@aas.org.test',
       website: 'https://aasciences.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'southeast-asian-research',
       name: 'Southeast Asian Research Network',
-      about: 'Regional collaboration platform for scientific research and innovation in Southeast Asia.',
+      about:
+        'Regional collaboration platform for scientific research and innovation in Southeast Asia.',
       email: 'research@searnet.test',
       website: 'https://searnet.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'geological-survey',
       name: 'International Geological Survey',
-      about: 'Global organization coordinating geological research and earth science studies worldwide.',
+      about:
+        'Global organization coordinating geological research and earth science studies worldwide.',
       email: 'info@geologicalsurvey.test',
       website: 'https://geologicalsurvey.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'virology-research',
       name: 'International Virology Research Institute',
-      about: 'Leading institute for virology research and infectious disease studies, advancing global health security.',
+      about:
+        'Leading institute for virology research and infectious disease studies, advancing global health security.',
       email: 'research@virology-institute.test',
       website: 'https://virology-institute.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'archaeology-research',
       name: 'African Archaeological Research Foundation',
-      about: 'Research foundation dedicated to archaeological studies in Africa and advancing understanding of African civilizations.',
+      about:
+        'Research foundation dedicated to archaeological studies in Africa and advancing understanding of African civilizations.',
       email: 'contact@africanarchaeology.test',
       website: 'https://africanarchaeology.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'environmental-researchers',
       name: 'Global Environmental Research Network',
-      about: 'International network of environmental scientists working on conservation, sustainability, and climate change research.',
+      about:
+        'International network of environmental scientists working on conservation, sustainability, and climate change research.',
       email: 'info@envresearch.test',
       website: 'https://envresearch.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'who-mental-health',
       name: 'WHO Mental Health Programme',
-      about: 'World Health Organization program focused on global mental health research, policy, and implementation.',
+      about:
+        'World Health Organization program focused on global mental health research, policy, and implementation.',
       email: 'mentalhealth@who.test',
       website: 'https://who.int/mental-health',
-      picture: null
+      picture: null,
     },
     {
       id: 'caprisa',
       name: 'Centre for the AIDS Programme of Research in South Africa',
-      about: 'Leading African research organization focused on HIV/AIDS prevention, treatment, and care.',
+      about:
+        'Leading African research organization focused on HIV/AIDS prevention, treatment, and care.',
       email: 'research@caprisa.test',
       website: 'https://caprisa.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'drdo',
       name: 'Defence Research and Development Organisation',
-      about: 'Premier defense research organization of India, responsible for military technology development.',
+      about:
+        'Premier defense research organization of India, responsible for military technology development.',
       email: 'contact@drdo.test',
       website: 'https://drdo.gov.in',
-      picture: null
+      picture: null,
     },
     {
       id: 'scripps-research',
       name: 'Scripps Research Institute',
-      about: 'American medical research facility focused on biomedical sciences and drug discovery.',
+      about:
+        'American medical research facility focused on biomedical sciences and drug discovery.',
       email: 'info@scripps.test',
       website: 'https://scripps.edu',
-      picture: null
+      picture: null,
     },
     {
       id: 'green-belt-movement',
       name: 'Green Belt Movement',
-      about: 'Grassroots environmental organization founded by Wangari Maathai, focused on tree planting and environmental conservation.',
+      about:
+        'Grassroots environmental organization founded by Wangari Maathai, focused on tree planting and environmental conservation.',
       email: 'info@greenbeltmovement.test',
       website: 'https://greenbeltmovement.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'aerospace-research',
       name: 'International Aerospace Research Consortium',
-      about: 'Global consortium for aerospace research and development, advancing space exploration technologies.',
+      about:
+        'Global consortium for aerospace research and development, advancing space exploration technologies.',
       email: 'research@aerospace-consortium.test',
       website: 'https://aerospace-research.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'dakar-university',
@@ -1132,120 +1252,140 @@ export const stemAchievementsData: DataPackage = {
       about: 'Leading university in Senegal, named after historian and scientist Cheikh Anta Diop.',
       email: 'contact@ucad.sn.test',
       website: 'https://ucad.sn',
-      picture: null
+      picture: null,
     },
     {
       id: 'cambridge-mathematics',
       name: 'Cambridge Mathematics Faculty',
-      about: 'The mathematics faculty at the University of Cambridge, renowned for groundbreaking mathematical research and education.',
+      about:
+        'The mathematics faculty at the University of Cambridge, renowned for groundbreaking mathematical research and education.',
       email: 'mathematics@cam.ac.uk.test',
       website: 'https://www.maths.cam.ac.uk',
-      picture: null
+      picture: null,
     },
     {
       id: 'nobel-laureates',
       name: 'Nobel Prize Recipients Association',
-      about: 'Professional association connecting Nobel Prize winners across all disciplines to promote scientific collaboration.',
+      about:
+        'Professional association connecting Nobel Prize winners across all disciplines to promote scientific collaboration.',
       email: 'contact@nobellaureates.test',
       website: 'https://www.nobelprize.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'physics-research',
       name: 'International Physics Research Society',
-      about: 'Global society of physicists conducting research in theoretical and experimental physics across multiple disciplines.',
+      about:
+        'Global society of physicists conducting research in theoretical and experimental physics across multiple disciplines.',
       email: 'research@physicsresearch.test',
       website: 'https://physicsresearch.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'medical-researchers',
       name: 'International Medical Research Association',
-      about: 'Professional association for medical researchers working in virology, public health, and clinical research.',
+      about:
+        'Professional association for medical researchers working in virology, public health, and clinical research.',
       email: 'contact@medicalresearchers.test',
       website: 'https://medicalresearchers.org',
-      picture: null
+      picture: null,
     },
     {
       id: 'artemis-program',
       name: 'NASA Artemis Program',
-      about: 'NASA programme returning crewed missions to the Moon, including the Artemis II lunar flyby flight in April 2026 — the first time astronauts had travelled beyond low Earth orbit since 1972.',
+      about:
+        'NASA programme returning crewed missions to the Moon, including the Artemis II lunar flyby flight in April 2026 — the first time astronauts had travelled beyond low Earth orbit since 1972.',
       email: 'artemis@nasa.test',
       website: 'https://www.nasa.gov/humans-in-space/artemis/',
-      picture: null
+      picture: null,
     },
     {
       id: 'johnson-space-center',
       name: 'NASA Johnson Space Center',
-      about: 'NASA centre in Houston, Texas, home to the astronaut corps, Mission Control, and the program offices for the International Space Station, Orion, Gateway, and Artemis lunar missions.',
+      about:
+        'NASA centre in Houston, Texas, home to the astronaut corps, Mission Control, and the program offices for the International Space Station, Orion, Gateway, and Artemis lunar missions.',
       email: 'jsc@nasa.test',
       website: 'https://www.nasa.gov/johnson/',
-      picture: null
+      picture: null,
     },
     {
       id: 'kennedy-space-center',
       name: 'NASA Kennedy Space Center',
-      about: 'NASA launch site on Florida\'s Space Coast, including Launch Pad 39B from which the Artemis I and Artemis II Space Launch System rockets lifted off.',
+      about:
+        "NASA launch site on Florida's Space Coast, including Launch Pad 39B from which the Artemis I and Artemis II Space Launch System rockets lifted off.",
       email: 'ksc@nasa.test',
       website: 'https://www.nasa.gov/kennedy/',
-      picture: null
+      picture: null,
     },
     {
       id: 'exploration-ground-systems',
       name: 'NASA Exploration Ground Systems Program',
-      about: 'NASA programme based at Kennedy Space Center responsible for the launch infrastructure, ground processing, and launch control systems for the Space Launch System and Orion spacecraft.',
+      about:
+        'NASA programme based at Kennedy Space Center responsible for the launch infrastructure, ground processing, and launch control systems for the Space Launch System and Orion spacecraft.',
       email: 'egs@nasa.test',
       website: 'https://www.nasa.gov/exploration-ground-systems/',
-      picture: null
+      picture: null,
     },
     {
       id: 'northrop-grumman',
       name: 'Northrop Grumman',
-      about: 'American aerospace and defence company that builds the solid rocket boosters for the Space Launch System and the Habitation and Logistics Outpost (HALO) module for the Gateway lunar space station.',
+      about:
+        'American aerospace and defence company that builds the solid rocket boosters for the Space Launch System and the Habitation and Logistics Outpost (HALO) module for the Gateway lunar space station.',
       email: 'contact@northropgrumman.test',
       website: 'https://www.northropgrumman.com',
-      picture: null
-    }
+      picture: null,
+    },
   ],
   events: [
     {
       id: 'stem-achievement-conference-2024',
       name: 'STEM Achievement Recognition Conference 2024',
       date: new Date('2024-06-15'),
-      attendeeIds: ['katherine-johnson', 'shirley-ann-jackson', 'grace-hopper', 'jane-goodall']
+      attendeeIds: ['katherine-johnson', 'shirley-ann-jackson', 'grace-hopper', 'jane-goodall'],
     },
     {
       id: 'women-in-physics-symposium',
       name: 'Women in Physics Symposium',
       date: new Date('2024-09-20'),
-      attendeeIds: ['marie-curie', 'chien-shiung-wu', 'vera-rubin', 'sau-lan-wu']
+      attendeeIds: ['marie-curie', 'chien-shiung-wu', 'vera-rubin', 'sau-lan-wu'],
     },
     {
       id: 'computer-science-pioneers-meeting',
       name: 'Computer Science Pioneers Meeting',
       date: new Date('2024-11-10'),
-      attendeeIds: ['ada-lovelace', 'grace-hopper', 'dorothy-vaughan', 'annie-easley']
+      attendeeIds: ['ada-lovelace', 'grace-hopper', 'dorothy-vaughan', 'annie-easley'],
     },
     {
       id: 'mathematics-education-workshop',
       name: 'Mathematics Education Workshop',
       date: new Date('2024-07-25'),
-      attendeeIds: ['katherine-johnson', 'charlotte-angas-scott', 'dorothy-vaughan', 'annie-easley']
+      attendeeIds: [
+        'katherine-johnson',
+        'charlotte-angas-scott',
+        'dorothy-vaughan',
+        'annie-easley',
+      ],
     },
     {
       id: 'space-exploration-summit',
       name: 'Space Exploration and Technology Summit',
       date: new Date('2024-08-30'),
-      attendeeIds: ['katherine-johnson', 'kalpana-chawla', 'mary-jackson', 'dorothy-vaughan']
+      attendeeIds: ['katherine-johnson', 'kalpana-chawla', 'mary-jackson', 'dorothy-vaughan'],
     },
     {
       id: 'artemis-2-mission-2026',
       name: 'Artemis II Lunar Flyby Mission',
       date: new Date('2026-04-01'),
-      attendeeIds: ['christina-koch', 'victor-glover', 'vanessa-wyche', 'charlie-blackwell-thompson', 'amy-lendian'],
-      reference: 'https://en.wikipedia.org/wiki/Artemis_II'
-    }
-  ]
+      attendeeIds: [
+        'christina-koch',
+        'victor-glover',
+        'vanessa-wyche',
+        'charlie-blackwell-thompson',
+        'amy-lendian',
+      ],
+      reference: 'https://en.wikipedia.org/wiki/Artemis_II',
+    },
+  ],
 };
 
 export default stemAchievementsData;

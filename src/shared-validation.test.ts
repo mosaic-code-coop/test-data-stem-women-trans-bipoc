@@ -3,13 +3,13 @@ import { stemAchievementsData } from './index.js';
 
 validateDataPackage(stemAchievementsData, {
   datasetName: 'STEM Achievements Dataset',
-  minBirthYear: 300,  // Historical figures like Hypatia
+  minBirthYear: 300, // Historical figures like Hypatia
   maxBirthYear: 2010,
   requirePronouns: true,
   requireDateOfBirth: false,
   minBioLength: 100,
   containsFirstNationsPeople: false,
-  validateImageUrls: false,  // Disabled due to timeout issues with some URLs
-  validateReferenceUrls: false,  // Disabled due to timeout issues with some URLs
-  httpTimeout: 30000
+  validateImageUrls: false, // Disabled due to timeout issues with some URLs
+  validateReferenceUrls: false, // Disabled due to timeout issues with some URLs
+  httpTimeout: 30000,
 });

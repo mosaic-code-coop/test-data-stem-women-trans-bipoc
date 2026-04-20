@@ -11,6 +11,7 @@ This dataset recognizes and celebrates the achievements of Women, non-binary, qu
 The data set aims to be geographically diverse in representation
 
 ### Representation Categories
+
 - **Women in STEM**: Historical and contemporary achievements
 - **Non-binary and queer scientists**: Contributions across all STEM fields
 - **Black scientists and engineers**: African and African diaspora achievements
@@ -28,7 +29,7 @@ This dataset includes proper Unicode characters to help test applications' handl
 
 - **Chinese Names**: Include traditional characters and tone-marked Pinyin
   - Example: `Wú Jiànxióng (吳健雄) / Chien-Shiung Wu`
-- **Devanagari Script**: Sanskrit and Hindi names in native scripts  
+- **Devanagari Script**: Sanskrit and Hindi names in native scripts
   - Example: `श्रीनिवास रामानुजन / Srīnivāsa Rāmānujan`
 - **Cyrillic Script**: Russian names in Cyrillic alphabet
   - Example: `Софья Васильевна Ковалевская / Sofia Vasilyevna Kovalevskaya`
@@ -40,6 +41,7 @@ This dataset includes proper Unicode characters to help test applications' handl
 ## Contributing
 
 When adding new entries, please:
+
 - Follow the BIO_WRITING_SPEC.md guidelines
 - Ensure accuracy with proper citations in the reference attribute
 - Pictures should be URLs of public domain photo of the person or other suitable image
