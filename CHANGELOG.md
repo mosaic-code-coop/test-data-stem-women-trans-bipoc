@@ -27,11 +27,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `lint`, `lint:fix`, `format`, `format:check`, `typecheck` scripts.
 - CI runs lint, format check, typecheck, build, then tests (offline
   validation only — image-URL suite excluded by default).
+- Twelve entries broadening Asian, African, and trans / non-binary
+  coverage: Tu Youyou, Maryam Mirzakhani, Bibha Chowdhuri, Lin Lanying,
+  Tebello Nyokong, Francisca Okeke, Catherine Ngila, Aderemi Kuku, Lynn
+  Conway, Sophie Wilson, Audrey Tang, Ben Barres.
 
 ### Notes
 
-This package cannot be published to npm until `test-data-factory@0.1.0` is
-published and the peer-dep is repointed to a real semver. CI on GitHub
-Actions will fail to install dependencies until then for the same reason.
+- This package cannot be published to npm until `test-data-factory@0.1.0` is
+  published and the peer-dep is repointed to a real semver. CI on GitHub
+  Actions will fail to install dependencies until then for the same reason.
+- The twelve newly added entries currently use the generic
+  `Person_icon_BLACK-01.svg` placeholder for `picture`; sourcing
+  public-domain photographs is a follow-up before any release that
+  re-runs the network-bound image-validation suite.
 
 <!-- Insert future releases below -->
