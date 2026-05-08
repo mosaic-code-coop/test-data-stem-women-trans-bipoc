@@ -1,7 +1,7 @@
 # STEM Achievements Dataset - Diversity Report
 
-_Generated on 2025-08-18_
-_Total People: 39_
+_Generated on 2026-05-08_
+_Total People: 45_
 
 ## Geographic Distribution
 
@@ -9,60 +9,60 @@ _Total People: 39_
 
 | Region        | Count | Percentage |
 | ------------- | ----- | ---------- |
-| Europe        | 17    | 43.6%      |
-| North America | 12    | 30.8%      |
-| Not Specified | 6     | 15.4%      |
-| Asia          | 4     | 10.3%      |
+| North America | 19    | 42.2%      |
+| Europe        | 17    | 37.8%      |
+| Not Specified | 5     | 11.1%      |
+| Asia          | 4     | 8.9%       |
 
 ### Top Countries
 
 | Country        | Count | Percentage |
 | -------------- | ----- | ---------- |
-| United States  | 12    | 30.8%      |
-| United Kingdom | 6     | 15.4%      |
-| Not Specified  | 6     | 15.4%      |
-| India          | 3     | 7.7%       |
-| France         | 2     | 5.1%       |
-| Germany        | 2     | 5.1%       |
-| Russia         | 2     | 5.1%       |
-| Italy          | 2     | 5.1%       |
-| China          | 1     | 2.6%       |
-| Greece         | 1     | 2.6%       |
-| Austria        | 1     | 2.6%       |
-| Denmark        | 1     | 2.6%       |
+| United States  | 19    | 42.2%      |
+| United Kingdom | 6     | 13.3%      |
+| Not Specified  | 5     | 11.1%      |
+| Germany        | 3     | 6.7%       |
+| India          | 3     | 6.7%       |
+| France         | 2     | 4.4%       |
+| Italy          | 2     | 4.4%       |
+| Russia         | 1     | 2.2%       |
+| China          | 1     | 2.2%       |
+| Greece         | 1     | 2.2%       |
+| Austria        | 1     | 2.2%       |
+| Denmark        | 1     | 2.2%       |
 
 ### Detailed Geographic Breakdown
 
 | Region - Country              | Count | Percentage |
 | ----------------------------- | ----- | ---------- |
-| North America - United States | 12    | 30.8%      |
-| Europe - United Kingdom       | 6     | 15.4%      |
-| Not Specified - Not Specified | 6     | 15.4%      |
-| Asia - India                  | 3     | 7.7%       |
-| Europe - France               | 2     | 5.1%       |
-| Europe - Germany              | 2     | 5.1%       |
-| Europe - Russia               | 2     | 5.1%       |
-| Europe - Italy                | 2     | 5.1%       |
-| Asia - China                  | 1     | 2.6%       |
-| Europe - Greece               | 1     | 2.6%       |
-| Europe - Austria              | 1     | 2.6%       |
-| Europe - Denmark              | 1     | 2.6%       |
+| North America - United States | 19    | 42.2%      |
+| Europe - United Kingdom       | 6     | 13.3%      |
+| Not Specified - Not Specified | 5     | 11.1%      |
+| Europe - Germany              | 3     | 6.7%       |
+| Asia - India                  | 3     | 6.7%       |
+| Europe - France               | 2     | 4.4%       |
+| Europe - Italy                | 2     | 4.4%       |
+| Europe - Russia               | 1     | 2.2%       |
+| Asia - China                  | 1     | 2.2%       |
+| Europe - Greece               | 1     | 2.2%       |
+| Europe - Austria              | 1     | 2.2%       |
+| Europe - Denmark              | 1     | 2.2%       |
 
 ## Pronoun Distribution
 
 | Pronouns | Count | Percentage |
 | -------- | ----- | ---------- |
-| she/her  | 33    | 84.6%      |
-| he/him   | 6     | 15.4%      |
+| she/her  | 38    | 84.4%      |
+| he/him   | 7     | 15.6%      |
 
 ## Data Completeness
 
 | Field         | With Data | Without Data | Completion Rate |
 | ------------- | --------- | ------------ | --------------- |
-| Address       | 0         | 39           | 0.0%            |
-| Date of Birth | 39        | 0            | 100.0%          |
-| Pronouns      | 39        | 0            | 100.0%          |
-| Bio           | 31        | 8            | 79.5%           |
+| Address       | 0         | 45           | 0.0%            |
+| Date of Birth | 41        | 4            | 91.1%           |
+| Pronouns      | 45        | 0            | 100.0%          |
+| Bio           | 37        | 8            | 82.2%           |
 
 ## Diversity Metrics
 
@@ -70,19 +70,19 @@ _Total People: 39_
 
 - **Regions represented**: 3
 - **Countries represented**: 11
-- **North American representation**: 30.8%
+- **North American representation**: 42.2%
 
 ### Gender Diversity
 
-- **She/Her pronouns**: 33 (84.6%)
-- **He/Him pronouns**: 6 (15.4%)
+- **She/Her pronouns**: 38 (84.4%)
+- **He/Him pronouns**: 7 (15.6%)
 - **They/Them pronouns**: 0 (0.0%)
 - **Other/Unspecified**: 0
 
 ### Unicode Character Usage
 
-- **Names with Unicode characters**: 10 (25.6%)
-- **ASCII-only names**: 29 (74.4%)
+- **Names with Unicode characters**: 9 (20.0%)
+- **ASCII-only names**: 36 (80.0%)
 
 ---
 
