@@ -9,7 +9,6 @@ validateDataPackage(stemAchievementsData, {
   requireDateOfBirth: false,
   minBioLength: 100,
   containsFirstNationsPeople: false,
-  validateImageUrls: false, // Disabled due to timeout issues with some URLs
   validateReferenceUrls: false, // Disabled due to timeout issues with some URLs
   httpTimeout: 30000,
 });
