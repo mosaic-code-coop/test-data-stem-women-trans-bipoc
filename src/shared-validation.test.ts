@@ -5,7 +5,6 @@ validateDataPackage(stemAchievementsData, {
   datasetName: 'STEM Achievements Dataset',
   minBirthYear: 300, // Historical figures like Hypatia
   maxBirthYear: 2010,
-  requirePronouns: true,
   requireDateOfBirth: false,
   minBioLength: 100,
   containsFirstNationsPeople: false,
