@@ -1,5 +1,33 @@
 # STEM Achievements Dataset
 
+Real biographies of women, trans, non-binary, queer, Black, Indigenous, and people of colour scientists, engineers, and mathematicians — packaged as test data for use in demos, fixtures, and test suites.
+
+## Quickstart
+
+```bash
+npm install stem-achievements-data @mosaic-code/test-data-factory
+```
+
+```typescript
+import DataFactory from '@mosaic-code/test-data-factory';
+import stemAchievementsData from 'stem-achievements-data';
+
+const factory = new DataFactory(stemAchievementsData);
+
+// Three random people for your test
+const users = factory.getPeople(3);
+
+// A specific person by id
+const ada = factory.getPerson('ada-lovelace');
+
+// People tagged Mathematics
+const mathematicians = factory.getPeopleByTag('Mathematics');
+```
+
+For deterministic output across test runs, call `factory.setSeed(<number>)` first.
+
+See the [framework README](https://github.com/mosaic-sunrise/test-data-api#readme) for the full DataFactory API.
+
 ## Purpose
 
 This dataset recognizes and celebrates the achievements of Women, non-binary, queer, black, indigenous and people of colour in Science, Technology, Engineering, and Mathematics (STEM).
