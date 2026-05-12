@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "bj-habibie",
@@ -10,17 +10,7 @@ export default {
   email: "bj.habibie@iptn.test",
   phone: null,
   picture: null,
-  tags: [
-    "Aerospace-Engineering",
-    "Aircraft-Design",
-    "Indonesian",
-    "Thermodynamics",
-    "Aerodynamics",
-  ],
-  groupMemberships: [
-    "indonesian-scientists",
-    "aerospace-research",
-    "southeast-asian-research",
-  ],
+  tags: ["Aerospace-Engineering", "Aircraft-Design", "Indonesian", "Thermodynamics", "Aerodynamics"],
+  groupMemberships: ["indonesian-scientists", "aerospace-research", "southeast-asian-research"],
   reference: "https://en.wikipedia.org/wiki/B._J._Habibie",
 } satisfies Person;

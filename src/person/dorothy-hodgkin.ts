@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "dorothy-hodgkin",
@@ -9,15 +9,6 @@ export default {
   email: "dorothy.hodgkin@oxford-chemistry.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/en/3/3f/Dorothy_Hodgkin_Nobel.jpg",
-  tags: [
-    "Chemistry",
-    "X-Ray-Crystallography",
-    "Biochemistry",
-    "British",
-    "Nobel-Prize",
-  ],
-  groupMemberships: [
-    "oxford-chemistry",
-    "crystallography-research",
-  ],
+  tags: ["Chemistry", "X-Ray-Crystallography", "Biochemistry", "British", "Nobel-Prize"],
+  groupMemberships: ["oxford-chemistry", "crystallography-research"],
 } satisfies Person;

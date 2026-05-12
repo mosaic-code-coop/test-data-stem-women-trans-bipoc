@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "wangari-maathai-scientist",
@@ -9,19 +9,10 @@ export default {
   email: "w.maathai@greenbelt.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/d/da/Wangari_Maathai_in_2001.jpg",
-  tags: [
-    "Environmental-Science",
-    "Forestry",
-    "Kenyan",
-    "Nobel-Prize",
-    "Sustainability",
-  ],
-  groupMemberships: [
-    "african-scientists",
-    "environmental-researchers",
-    "green-belt-movement",
-  ],
+  tags: ["Environmental-Science", "Forestry", "Kenyan", "Nobel-Prize", "Sustainability"],
+  groupMemberships: ["african-scientists", "environmental-researchers", "green-belt-movement"],
   reference: "https://www.nobelprize.org/prizes/peace/2004/maathai/biographical/",
-  quote: "In the course of history, there comes a time when humanity is called to shift to a new level of consciousness, to reach a higher moral ground. A time when we have to shed our fear and give hope to each other. That time is now.",
+  quote:
+    "In the course of history, there comes a time when humanity is called to shift to a new level of consciousness, to reach a higher moral ground. A time when we have to shed our fear and give hope to each other. That time is now.",
   quoteReference: "https://www.nobelprize.org/prizes/peace/2004/maathai/lecture/",
 } satisfies Person;

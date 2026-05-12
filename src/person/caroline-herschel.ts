@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "caroline-herschel",
@@ -9,15 +9,6 @@ export default {
   email: "caroline.herschel@royal-astronomical-society.test",
   phone: null,
   picture: null,
-  tags: [
-    "Astronomy",
-    "Stellar-Astronomy",
-    "Comet-Discovery",
-    "British",
-    "German-Born",
-  ],
-  groupMemberships: [
-    "royal-astronomical-society",
-    "stellar-astronomy-research",
-  ],
+  tags: ["Astronomy", "Stellar-Astronomy", "Comet-Discovery", "British", "German-Born"],
+  groupMemberships: ["royal-astronomical-society", "stellar-astronomy-research"],
 } satisfies Person;

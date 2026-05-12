@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "mary-jackson",
@@ -9,15 +9,6 @@ export default {
   email: "mary.jackson@nasa.test",
   phone: "+1-555-864-1000",
   picture: null,
-  tags: [
-    "Engineering",
-    "Aerospace-Engineering",
-    "NASA",
-    "African-American",
-    "Wind-Tunnels",
-  ],
-  groupMemberships: [
-    "nasa-engineering",
-    "langley-research-center",
-  ],
+  tags: ["Engineering", "Aerospace-Engineering", "NASA", "African-American", "Wind-Tunnels"],
+  groupMemberships: ["nasa-engineering", "langley-research-center"],
 } satisfies Person;

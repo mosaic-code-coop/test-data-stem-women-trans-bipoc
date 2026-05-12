@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "audrey-tang",
@@ -13,17 +13,7 @@ export default {
   email: "audrey@moda-tw.test",
   phone: null,
   picture: null,
-  tags: [
-    "Computer-Science",
-    "Programming",
-    "Taiwanese",
-    "Civic-Tech",
-    "Non-Binary",
-    "LGBTQ",
-    "Open-Source",
-  ],
-  groupMemberships: [
-    "computer-pioneers",
-  ],
+  tags: ["Computer-Science", "Programming", "Taiwanese", "Civic-Tech", "Non-Binary", "LGBTQ", "Open-Source"],
+  groupMemberships: ["computer-pioneers"],
   reference: "https://en.wikipedia.org/wiki/Audrey_Tang",
 } satisfies Person;

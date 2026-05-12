@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "srinivasa-ramanujan",
@@ -13,18 +13,10 @@ export default {
   email: "ramanujan@cambridge.test",
   phone: null,
   picture: null,
-  tags: [
-    "Mathematics",
-    "Number-Theory",
-    "Indian",
-    "Self-Taught",
-    "Cambridge",
-  ],
-  groupMemberships: [
-    "cambridge-mathematics",
-    "indian-scientists",
-  ],
+  tags: ["Mathematics", "Number-Theory", "Indian", "Self-Taught", "Cambridge"],
+  groupMemberships: ["cambridge-mathematics", "indian-scientists"],
   reference: "https://www.britannica.com/biography/Srinivasa-Ramanujan",
   quote: "An equation for me has no meaning unless it expresses a thought of God.",
-  quoteReference: "https://www.goodreads.com/work/quotes/1031423-the-man-who-knew-infinity-a-life-of-the-genius-ramanujan",
+  quoteReference:
+    "https://www.goodreads.com/work/quotes/1031423-the-man-who-knew-infinity-a-life-of-the-genius-ramanujan",
 } satisfies Person;

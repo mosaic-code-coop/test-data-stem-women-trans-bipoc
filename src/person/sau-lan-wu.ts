@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "sau-lan-wu",
@@ -13,15 +13,6 @@ export default {
   email: "sau-lan.wu@cern.test",
   phone: "+41-555-767-4101",
   picture: null,
-  tags: [
-    "Physics",
-    "Particle-Physics",
-    "CERN",
-    "Asian-American",
-    "Experimental-Physics",
-  ],
-  groupMemberships: [
-    "cern-physics",
-    "particle-detection",
-  ],
+  tags: ["Physics", "Particle-Physics", "CERN", "Asian-American", "Experimental-Physics"],
+  groupMemberships: ["cern-physics", "particle-detection"],
 } satisfies Person;

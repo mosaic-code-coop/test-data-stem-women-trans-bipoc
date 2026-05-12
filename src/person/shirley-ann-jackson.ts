@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "shirley-ann-jackson",
@@ -9,17 +9,8 @@ export default {
   email: "shirley.jackson@rpi.test",
   phone: "+1-555-276-6000",
   picture: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Shirley_Ann_Jackson_World_Economic_Forum_2010.jpg",
-  tags: [
-    "Physics",
-    "Theoretical-Physics",
-    "Academia",
-    "African-American",
-    "Leadership",
-  ],
-  groupMemberships: [
-    "rpi-physics",
-    "mit-alumni",
-  ],
+  tags: ["Physics", "Theoretical-Physics", "Academia", "African-American", "Leadership"],
+  groupMemberships: ["rpi-physics", "mit-alumni"],
   quote: "Do not let others define who you are. Define yourself.",
   quoteReference: "https://www.perotmuseum.org/events/children-and-families/stemleaders/shirley-ann-jackson/",
 } satisfies Person;

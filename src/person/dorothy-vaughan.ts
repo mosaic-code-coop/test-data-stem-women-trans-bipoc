@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "dorothy-vaughan",
@@ -9,17 +9,8 @@ export default {
   email: "dorothy.vaughan@nasa.test",
   phone: "+1-555-864-1000",
   picture: "https://upload.wikimedia.org/wikipedia/commons/9/98/Dorothy_Vaughan_2.jpg",
-  tags: [
-    "Mathematics",
-    "Computer-Science",
-    "NASA",
-    "African-American",
-    "Leadership",
-  ],
-  groupMemberships: [
-    "nasa-mathematics",
-    "west-area-computing",
-  ],
+  tags: ["Mathematics", "Computer-Science", "NASA", "African-American", "Leadership"],
+  groupMemberships: ["nasa-mathematics", "west-area-computing"],
   quote: "I changed what I could, and what I couldn't, I endured.",
   quoteReference: "https://www.nasa.gov/people/dorothy-vaughan/",
 } satisfies Person;

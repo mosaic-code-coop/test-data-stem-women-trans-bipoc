@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "grace-hopper",
@@ -9,18 +9,8 @@ export default {
   email: "grace.hopper@navy.test",
   phone: "+1-555-697-0211",
   picture: "https://upload.wikimedia.org/wikipedia/commons/3/37/Grace_Hopper_and_UNIVAC.jpg",
-  tags: [
-    "Computer-Science",
-    "Programming",
-    "Navy",
-    "COBOL",
-    "Compiler",
-    "American",
-  ],
-  groupMemberships: [
-    "navy-computing",
-    "programming-pioneers",
-  ],
+  tags: ["Computer-Science", "Programming", "Navy", "COBOL", "Compiler", "American"],
+  groupMemberships: ["navy-computing", "programming-pioneers"],
   quote: "It's easier to ask forgiveness than it is to get permission.",
   quoteReference: "https://www.oxfordreference.com/display/10.1093/acref/9780191826719.001.0001/q-oro-ed4-00017750",
 } satisfies Person;

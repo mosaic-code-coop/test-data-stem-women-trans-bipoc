@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "lynn-conway",
@@ -9,17 +9,7 @@ export default {
   email: "l.conway@umich-eecs.test",
   phone: null,
   picture: null,
-  tags: [
-    "Computer-Science",
-    "VLSI-Design",
-    "American",
-    "Transgender",
-    "LGBTQ",
-    "Electrical-Engineering",
-  ],
-  groupMemberships: [
-    "computer-pioneers",
-    "programming-pioneers",
-  ],
+  tags: ["Computer-Science", "VLSI-Design", "American", "Transgender", "LGBTQ", "Electrical-Engineering"],
+  groupMemberships: ["computer-pioneers", "programming-pioneers"],
   reference: "https://en.wikipedia.org/wiki/Lynn_Conway",
 } satisfies Person;

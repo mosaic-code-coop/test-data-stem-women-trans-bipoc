@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "maria-mitchell",
@@ -9,17 +9,9 @@ export default {
   email: "maria.mitchell@vassar-astronomy.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/7/70/Maria_Mitchell_portrait.jpg",
-  tags: [
-    "Astronomy",
-    "Comet-Discovery",
-    "Education",
-    "American",
-    "Nineteenth-Century",
-  ],
-  groupMemberships: [
-    "vassar-astronomy",
-    "american-astronomical-society",
-  ],
-  quote: "We especially need imagination in science. It is not all mathematics, nor all logic, but it is somewhat beauty and poetry.",
+  tags: ["Astronomy", "Comet-Discovery", "Education", "American", "Nineteenth-Century"],
+  groupMemberships: ["vassar-astronomy", "american-astronomical-society"],
+  quote:
+    "We especially need imagination in science. It is not all mathematics, nor all logic, but it is somewhat beauty and poetry.",
   quoteReference: "https://libquotes.com/maria-mitchell",
 } satisfies Person;

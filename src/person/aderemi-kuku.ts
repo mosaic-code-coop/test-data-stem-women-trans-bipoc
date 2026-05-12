@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "aderemi-kuku",
@@ -10,16 +10,7 @@ export default {
   email: "a.kuku@ictp-math.test",
   phone: null,
   picture: null,
-  tags: [
-    "Mathematics",
-    "Algebraic-K-Theory",
-    "Nigerian",
-    "Pure-Mathematics",
-    "Group-Rings",
-  ],
-  groupMemberships: [
-    "african-scientists",
-    "mathematical-education",
-  ],
+  tags: ["Mathematics", "Algebraic-K-Theory", "Nigerian", "Pure-Mathematics", "Group-Rings"],
+  groupMemberships: ["african-scientists", "mathematical-education"],
   reference: "https://en.wikipedia.org/wiki/Aderemi_Kuku",
 } satisfies Person;

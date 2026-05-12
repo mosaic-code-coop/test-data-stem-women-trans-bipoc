@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "ben-barres",
@@ -9,16 +9,7 @@ export default {
   email: "b.barres@stanford-neuro.test",
   phone: null,
   picture: null,
-  tags: [
-    "Neuroscience",
-    "Glial-Cells",
-    "American",
-    "Transgender",
-    "LGBTQ",
-    "Medical-Research",
-  ],
-  groupMemberships: [
-    "medical-researchers",
-  ],
+  tags: ["Neuroscience", "Glial-Cells", "American", "Transgender", "LGBTQ", "Medical-Research"],
+  groupMemberships: ["medical-researchers"],
   reference: "https://en.wikipedia.org/wiki/Ben_Barres",
 } satisfies Person;

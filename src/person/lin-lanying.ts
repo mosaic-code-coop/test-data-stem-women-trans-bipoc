@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "lin-lanying",
@@ -13,16 +13,7 @@ export default {
   email: "l.lanying@semiconductor-cas.test",
   phone: null,
   picture: null,
-  tags: [
-    "Physics",
-    "Semiconductors",
-    "Chinese",
-    "Materials-Science",
-    "Crystal-Growth",
-  ],
-  groupMemberships: [
-    "physics-research",
-    "experimental-physicists",
-  ],
+  tags: ["Physics", "Semiconductors", "Chinese", "Materials-Science", "Crystal-Growth"],
+  groupMemberships: ["physics-research", "experimental-physicists"],
   reference: "https://en.wikipedia.org/wiki/Lin_Lanying",
 } satisfies Person;

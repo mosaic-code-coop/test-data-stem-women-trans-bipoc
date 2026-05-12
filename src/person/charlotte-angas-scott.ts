@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "charlotte-angas-scott",
@@ -9,15 +9,6 @@ export default {
   email: "charlotte.scott@brynmawr.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/9/99/CharlotteAngasScott1910.png",
-  tags: [
-    "Mathematics",
-    "Algebraic-Geometry",
-    "Mathematical-Education",
-    "British",
-    "Academia",
-  ],
-  groupMemberships: [
-    "brynmawr-mathematics",
-    "mathematical-education",
-  ],
+  tags: ["Mathematics", "Algebraic-Geometry", "Mathematical-Education", "British", "Academia"],
+  groupMemberships: ["brynmawr-mathematics", "mathematical-education"],
 } satisfies Person;

@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "victor-glover",
@@ -9,18 +9,7 @@ export default {
   email: "victor.glover@nasa.test",
   phone: "+1-555-483-0000",
   picture: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Jsc2023e0016433_alt.jpg",
-  tags: [
-    "Aerospace-Engineering",
-    "Systems-Engineering",
-    "NASA",
-    "African-American",
-    "Artemis",
-  ],
-  groupMemberships: [
-    "nasa-engineering",
-    "artemis-program",
-    "johnson-space-center",
-    "african-american-scientists",
-  ],
+  tags: ["Aerospace-Engineering", "Systems-Engineering", "NASA", "African-American", "Artemis"],
+  groupMemberships: ["nasa-engineering", "artemis-program", "johnson-space-center", "african-american-scientists"],
   reference: "https://www.nasa.gov/people/victor-j-glover-jr/",
 } satisfies Person;

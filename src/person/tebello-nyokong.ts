@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "tebello-nyokong",
@@ -9,16 +9,7 @@ export default {
   email: "t.nyokong@rhodes-chem.test",
   phone: null,
   picture: null,
-  tags: [
-    "Chemistry",
-    "Photodynamic-Therapy",
-    "South-African",
-    "Cancer-Research",
-    "Phthalocyanines",
-  ],
-  groupMemberships: [
-    "african-scientists",
-    "medical-researchers",
-  ],
+  tags: ["Chemistry", "Photodynamic-Therapy", "South-African", "Cancer-Research", "Phthalocyanines"],
+  groupMemberships: ["african-scientists", "medical-researchers"],
   reference: "https://en.wikipedia.org/wiki/Tebello_Nyokong",
 } satisfies Person;

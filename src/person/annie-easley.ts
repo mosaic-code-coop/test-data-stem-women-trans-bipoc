@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "annie-easley",
@@ -9,15 +9,6 @@ export default {
   email: "annie.easley@nasa.test",
   phone: "+1-555-433-4000",
   picture: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Annie_Easley.jpg",
-  tags: [
-    "Computer-Science",
-    "Mathematics",
-    "NASA",
-    "African-American",
-    "Energy-Systems",
-  ],
-  groupMemberships: [
-    "nasa-mathematics",
-    "lewis-research-center",
-  ],
+  tags: ["Computer-Science", "Mathematics", "NASA", "African-American", "Energy-Systems"],
+  groupMemberships: ["nasa-mathematics", "lewis-research-center"],
 } satisfies Person;

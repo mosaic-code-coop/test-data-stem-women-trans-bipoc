@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "maryam-mirzakhani",
@@ -13,15 +13,7 @@ export default {
   email: "m.mirzakhani@stanford-math.test",
   phone: null,
   picture: null,
-  tags: [
-    "Mathematics",
-    "Hyperbolic-Geometry",
-    "Iranian",
-    "Fields-Medal",
-    "Moduli-Spaces",
-  ],
-  groupMemberships: [
-    "mathematical-education",
-  ],
+  tags: ["Mathematics", "Hyperbolic-Geometry", "Iranian", "Fields-Medal", "Moduli-Spaces"],
+  groupMemberships: ["mathematical-education"],
   reference: "https://en.wikipedia.org/wiki/Maryam_Mirzakhani",
 } satisfies Person;

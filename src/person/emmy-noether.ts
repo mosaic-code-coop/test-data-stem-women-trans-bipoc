@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "emmy-noether",
@@ -9,17 +9,9 @@ export default {
   email: "emmy.noether@mathematics-history.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Emmy_Noether_%283x4_cropped%29.jpg",
-  tags: [
-    "Mathematics",
-    "Abstract-Algebra",
-    "Theoretical-Physics",
-    "German",
-    "Noether-Theorem",
-  ],
-  groupMemberships: [
-    "mathematical-history",
-    "german-mathematics",
-  ],
-  quote: "My methods are really methods of working and thinking; this is why they have crept in everywhere anonymously.",
+  tags: ["Mathematics", "Abstract-Algebra", "Theoretical-Physics", "German", "Noether-Theorem"],
+  groupMemberships: ["mathematical-history", "german-mathematics"],
+  quote:
+    "My methods are really methods of working and thinking; this is why they have crept in everywhere anonymously.",
   quoteReference: "https://todayinsci.com/N/Noether_Emmy/NoetherEmmy-Quotations.htm",
 } satisfies Person;

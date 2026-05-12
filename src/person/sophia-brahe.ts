@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "sophia-brahe",
@@ -9,15 +9,6 @@ export default {
   email: "sophia.brahe@danish-astronomy.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sophie_Brahe_portrait.jpg",
-  tags: [
-    "Astronomy",
-    "Horticulture",
-    "Observational-Astronomy",
-    "Danish",
-    "Renaissance",
-  ],
-  groupMemberships: [
-    "danish-astronomy",
-    "renaissance-science",
-  ],
+  tags: ["Astronomy", "Horticulture", "Observational-Astronomy", "Danish", "Renaissance"],
+  groupMemberships: ["danish-astronomy", "renaissance-science"],
 } satisfies Person;

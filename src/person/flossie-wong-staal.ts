@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "flossie-wong-staal",
@@ -13,17 +13,7 @@ export default {
   email: "fwong.staal@scripps.test",
   phone: null,
   picture: null,
-  tags: [
-    "Virology",
-    "HIV-AIDS",
-    "Genetics",
-    "Chinese-American",
-    "Medical-Research",
-  ],
-  groupMemberships: [
-    "medical-researchers",
-    "virology-research",
-    "scripps-research",
-  ],
+  tags: ["Virology", "HIV-AIDS", "Genetics", "Chinese-American", "Medical-Research"],
+  groupMemberships: ["medical-researchers", "virology-research", "scripps-research"],
   reference: "https://www.scripps.edu/news-events/press-room/2020/20200715-wong-staal.html",
 } satisfies Person;

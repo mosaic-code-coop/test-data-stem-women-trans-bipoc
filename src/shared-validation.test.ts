@@ -1,8 +1,8 @@
-import { validateDataPackage } from '@mosaic-code/test-data-factory';
-import { stemAchievementsData } from './index.js';
+import { validateDataPackage } from "@mosaic-code/test-data-factory";
+import { stemAchievementsData } from "./index.js";
 
 validateDataPackage(stemAchievementsData, {
-  datasetName: 'STEM Achievements Dataset',
+  datasetName: "STEM Achievements Dataset",
   minBirthYear: 300, // Historical figures like Hypatia
   maxBirthYear: 2010,
   requireDateOfBirth: false,

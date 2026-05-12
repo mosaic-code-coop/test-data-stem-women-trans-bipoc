@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "charlie-blackwell-thompson",
@@ -8,17 +8,7 @@ export default {
   email: "charlie.blackwell-thompson@nasa.test",
   phone: "+1-555-867-0000",
   picture: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Charlie_Blackwell-Thompson_NASA_Portrait.jpg",
-  tags: [
-    "Computer-Engineering",
-    "NASA",
-    "Leadership",
-    "Artemis",
-    "Space-Exploration",
-  ],
-  groupMemberships: [
-    "kennedy-space-center",
-    "exploration-ground-systems",
-    "artemis-program",
-  ],
+  tags: ["Computer-Engineering", "NASA", "Leadership", "Artemis", "Space-Exploration"],
+  groupMemberships: ["kennedy-space-center", "exploration-ground-systems", "artemis-program"],
   reference: "https://www.nasa.gov/people/kennedy-biographies-blackwell-thompson/",
 } satisfies Person;

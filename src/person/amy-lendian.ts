@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "amy-lendian",
@@ -8,17 +8,7 @@ export default {
   email: "amy.lendian@nasa.test",
   phone: "+1-555-867-0000",
   picture: "https://www.nasa.gov/wp-content/uploads/2023/07/amylendian_ksc-20230530-ph-kls01_0018.jpg",
-  tags: [
-    "Systems-Engineering",
-    "NASA",
-    "Artemis",
-    "Space-Exploration",
-    "Leadership",
-  ],
-  groupMemberships: [
-    "kennedy-space-center",
-    "exploration-ground-systems",
-    "artemis-program",
-  ],
+  tags: ["Systems-Engineering", "NASA", "Artemis", "Space-Exploration", "Leadership"],
+  groupMemberships: ["kennedy-space-center", "exploration-ground-systems", "artemis-program"],
   reference: "https://www.nasa.gov/image-article/systems-engineering-supervisor-amy-lendian/",
 } satisfies Person;

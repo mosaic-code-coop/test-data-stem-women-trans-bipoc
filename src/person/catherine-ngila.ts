@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "catherine-ngila",
@@ -9,16 +9,7 @@ export default {
   email: "c.ngila@aas-water.test",
   phone: null,
   picture: null,
-  tags: [
-    "Chemistry",
-    "Analytical-Chemistry",
-    "Kenyan",
-    "Nanotechnology",
-    "Water-Quality",
-  ],
-  groupMemberships: [
-    "african-scientists",
-    "environmental-researchers",
-  ],
+  tags: ["Chemistry", "Analytical-Chemistry", "Kenyan", "Nanotechnology", "Water-Quality"],
+  groupMemberships: ["african-scientists", "environmental-researchers"],
   reference: "https://en.wikipedia.org/wiki/Catherine_Ngila",
 } satisfies Person;

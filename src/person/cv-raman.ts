@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "cv-raman",
@@ -13,18 +13,8 @@ export default {
   email: "cv.raman@iisc.test",
   phone: null,
   picture: null,
-  tags: [
-    "Physics",
-    "Optics",
-    "Indian",
-    "Nobel-Prize",
-    "Spectroscopy",
-  ],
-  groupMemberships: [
-    "indian-scientists",
-    "nobel-laureates",
-    "physics-research",
-  ],
+  tags: ["Physics", "Optics", "Indian", "Nobel-Prize", "Spectroscopy"],
+  groupMemberships: ["indian-scientists", "nobel-laureates", "physics-research"],
   reference: "https://www.nobelprize.org/prizes/physics/1930/raman/biographical/",
   quote: "The essence of science is independent thinking, hard work, and not equipment.",
   quoteReference: "https://www.brainyquote.com/authors/c-v-raman-quotes",

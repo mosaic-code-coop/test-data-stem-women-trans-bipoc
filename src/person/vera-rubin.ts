@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "vera-rubin",
@@ -9,17 +9,8 @@ export default {
   email: "vera.rubin@carnegie-science.test",
   phone: "+1-555-686-4370",
   picture: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Vera_Rubin_measuring_spectra_%28cropped%29.jpg",
-  tags: [
-    "Astronomy",
-    "Dark-Matter",
-    "Galaxy-Rotation",
-    "Observational-Astronomy",
-    "American",
-  ],
-  groupMemberships: [
-    "carnegie-observatories",
-    "dark-matter-research",
-  ],
+  tags: ["Astronomy", "Dark-Matter", "Galaxy-Rotation", "Observational-Astronomy", "American"],
+  groupMemberships: ["carnegie-observatories", "dark-matter-research"],
   quote: "There is no problem in science that can be solved by a man that cannot be solved by a woman.",
   quoteReference: "https://carnegiescience.edu/news/10-inspiring-quotes-astronomer-vera-rubin",
 } satisfies Person;

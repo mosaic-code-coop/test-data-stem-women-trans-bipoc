@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "vanessa-wyche",
@@ -8,18 +8,7 @@ export default {
   email: "vanessa.wyche@nasa.test",
   phone: "+1-555-483-0000",
   picture: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Vanessa_E._Wyche_in_2022.jpg",
-  tags: [
-    "Bioengineering",
-    "NASA",
-    "Leadership",
-    "African-American",
-    "Artemis",
-  ],
-  groupMemberships: [
-    "nasa-engineering",
-    "johnson-space-center",
-    "artemis-program",
-    "african-american-scientists",
-  ],
+  tags: ["Bioengineering", "NASA", "Leadership", "African-American", "Artemis"],
+  groupMemberships: ["nasa-engineering", "johnson-space-center", "artemis-program", "african-american-scientists"],
   reference: "https://www.nasa.gov/people/vanessa-e-wyche/",
 } satisfies Person;

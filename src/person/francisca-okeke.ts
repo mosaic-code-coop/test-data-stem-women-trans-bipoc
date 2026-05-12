@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "francisca-okeke",
@@ -9,16 +9,7 @@ export default {
   email: "f.okeke@unn-physics.test",
   phone: null,
   picture: null,
-  tags: [
-    "Physics",
-    "Atmospheric-Physics",
-    "Nigerian",
-    "Geophysics",
-    "Ionosphere",
-  ],
-  groupMemberships: [
-    "african-scientists",
-    "physics-research",
-  ],
+  tags: ["Physics", "Atmospheric-Physics", "Nigerian", "Geophysics", "Ionosphere"],
+  groupMemberships: ["african-scientists", "physics-research"],
   reference: "https://en.wikipedia.org/wiki/Francisca_Okeke",
 } satisfies Person;

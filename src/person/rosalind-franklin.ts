@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "rosalind-franklin",
@@ -9,17 +9,8 @@ export default {
   email: "rosalind.franklin@kcl.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Rosalind_Franklin_%28retouched%29.jpg",
-  tags: [
-    "Chemistry",
-    "Molecular-Biology",
-    "X-Ray-Crystallography",
-    "DNA",
-    "British",
-  ],
-  groupMemberships: [
-    "kings-college-chemistry",
-    "molecular-biology-research",
-  ],
+  tags: ["Chemistry", "Molecular-Biology", "X-Ray-Crystallography", "DNA", "British"],
+  groupMemberships: ["kings-college-chemistry", "molecular-biology-research"],
   quote: "Science and everyday life cannot and should not be separated.",
   quoteReference: "https://quoteinvestigator.com/2021/09/12/science-everyday/",
 } satisfies Person;

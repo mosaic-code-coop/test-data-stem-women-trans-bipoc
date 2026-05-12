@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "katherine-johnson",
@@ -9,18 +9,10 @@ export default {
   email: "katherine.johnson@nasa.test",
   phone: "+1-555-864-1000",
   picture: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Katherine_Johnson_1983.jpg",
-  tags: [
-    "Mathematics",
-    "Physics",
-    "NASA",
-    "Space-Exploration",
-    "African-American",
-  ],
-  groupMemberships: [
-    "nasa-mathematics",
-    "african-american-scientists",
-  ],
+  tags: ["Mathematics", "Physics", "NASA", "Space-Exploration", "African-American"],
+  groupMemberships: ["nasa-mathematics", "african-american-scientists"],
   reference: "https://www.nasa.gov/content/katherine-johnson-biography",
-  quote: "I counted everything. I counted the steps to the road, the steps up to church, the number of dishes and silverware I washed … anything that could be counted, I did.",
+  quote:
+    "I counted everything. I counted the steps to the road, the steps up to church, the number of dishes and silverware I washed … anything that could be counted, I did.",
   quoteReference: "https://www.nasa.gov/image-article/katherine-johnson-at-work-1962/",
 } satisfies Person;

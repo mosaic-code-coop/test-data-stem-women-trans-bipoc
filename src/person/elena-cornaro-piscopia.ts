@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "elena-cornaro-piscopia",
@@ -9,15 +9,6 @@ export default {
   email: "elena.piscopia@italian-mathematics.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Elena_Piscopia_portrait.jpg",
-  tags: [
-    "Mathematics",
-    "Philosophy",
-    "Italian",
-    "Seventeenth-Century",
-    "Academia",
-  ],
-  groupMemberships: [
-    "italian-mathematics",
-    "padua-university",
-  ],
+  tags: ["Mathematics", "Philosophy", "Italian", "Seventeenth-Century", "Academia"],
+  groupMemberships: ["italian-mathematics", "padua-university"],
 } satisfies Person;

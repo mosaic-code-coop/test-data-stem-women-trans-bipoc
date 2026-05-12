@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "tu-youyou",
@@ -13,16 +13,7 @@ export default {
   email: "tu.youyou@academia-tcm.test",
   phone: null,
   picture: null,
-  tags: [
-    "Pharmaceutical-Chemistry",
-    "Malaria",
-    "Chinese",
-    "Nobel-Prize",
-    "Traditional-Medicine",
-  ],
-  groupMemberships: [
-    "medical-researchers",
-    "nobel-laureates",
-  ],
+  tags: ["Pharmaceutical-Chemistry", "Malaria", "Chinese", "Nobel-Prize", "Traditional-Medicine"],
+  groupMemberships: ["medical-researchers", "nobel-laureates"],
   reference: "https://en.wikipedia.org/wiki/Tu_Youyou",
 } satisfies Person;

@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "cheikh-anta-diop",
@@ -9,17 +9,7 @@ export default {
   email: "ca.diop@dakar.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/8/83/Cheikh_Anta_Diop%2C_late_1940s.jpg",
-  tags: [
-    "Physics",
-    "Archaeology",
-    "Senegalese",
-    "Carbon-Dating",
-    "African-History",
-  ],
-  groupMemberships: [
-    "african-scientists",
-    "archaeology-research",
-    "dakar-university",
-  ],
+  tags: ["Physics", "Archaeology", "Senegalese", "Carbon-Dating", "African-History"],
+  groupMemberships: ["african-scientists", "archaeology-research", "dakar-university"],
   reference: "https://en.wikipedia.org/wiki/Cheikh_Anta_Diop",
 } satisfies Person;

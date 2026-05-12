@@ -31,6 +31,7 @@ src/
 5. Run `npm test` to confirm
 
 The assembler checks:
+
 - `id` field matches the filename
 - IDs are unique within each kind (person/group/event)
 - `groupMemberships` references existing groups

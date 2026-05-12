@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "ada-lovelace",
@@ -9,17 +9,8 @@ export default {
   email: "ada.lovelace@computing-history.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Ada_lovelace.jpg",
-  tags: [
-    "Computer-Science",
-    "Mathematics",
-    "Programming",
-    "Victorian-Era",
-    "British",
-  ],
-  groupMemberships: [
-    "computer-pioneers",
-    "mathematical-history",
-  ],
+  tags: ["Computer-Science", "Mathematics", "Programming", "Victorian-Era", "British"],
+  groupMemberships: ["computer-pioneers", "mathematical-history"],
   reference: "https://www.britannica.com/biography/Ada-Lovelace",
   quote: "The Analytical Engine weaves algebraical patterns just as the Jacquard-loom weaves flowers and leaves.",
   quoteReference: "https://psychclassics.yorku.ca/Lovelace/lovelace.htm",

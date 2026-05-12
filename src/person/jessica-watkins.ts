@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "jessica-watkins",
@@ -9,17 +9,7 @@ export default {
   email: "jessica.watkins@nasa.test",
   phone: "+1-555-483-0000",
   picture: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Jessica_Watkins_Astronaut_portrait_%28cropped%29.jpg",
-  tags: [
-    "Geology",
-    "Planetary-Science",
-    "NASA",
-    "African-American",
-    "Space-Exploration",
-  ],
-  groupMemberships: [
-    "nasa-engineering",
-    "johnson-space-center",
-    "african-american-scientists",
-  ],
+  tags: ["Geology", "Planetary-Science", "NASA", "African-American", "Space-Exploration"],
+  groupMemberships: ["nasa-engineering", "johnson-space-center", "african-american-scientists"],
   reference: "https://www.nasa.gov/people/jessica-watkins/",
 } satisfies Person;

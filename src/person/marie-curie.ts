@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "marie-curie",
@@ -13,18 +13,10 @@ export default {
   email: "marie.curie@sorbonne.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg",
-  tags: [
-    "Physics",
-    "Chemistry",
-    "Radioactivity",
-    "Nobel-Prize",
-    "Polish-French",
-  ],
-  groupMemberships: [
-    "sorbonne-physics",
-    "radioactivity-research",
-  ],
+  tags: ["Physics", "Chemistry", "Radioactivity", "Nobel-Prize", "Polish-French"],
+  groupMemberships: ["sorbonne-physics", "radioactivity-research"],
   reference: "https://www.nobelprize.org/prizes/physics/1903/curie/facts/",
-  quote: "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
+  quote:
+    "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
   quoteReference: "https://www.brainyquote.com/quotes/marie_curie_389010",
 } satisfies Person;

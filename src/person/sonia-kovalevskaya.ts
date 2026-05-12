@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "sonia-kovalevskaya",
@@ -13,15 +13,6 @@ export default {
   email: "sonia.kovalevskaya@mathematics-history.test",
   phone: null,
   picture: null,
-  tags: [
-    "Mathematics",
-    "Analysis",
-    "Partial-Differential-Equations",
-    "Russian",
-    "Mechanics",
-  ],
-  groupMemberships: [
-    "mathematical-history",
-    "russian-mathematics",
-  ],
+  tags: ["Mathematics", "Analysis", "Partial-Differential-Equations", "Russian", "Mechanics"],
+  groupMemberships: ["mathematical-history", "russian-mathematics"],
 } satisfies Person;

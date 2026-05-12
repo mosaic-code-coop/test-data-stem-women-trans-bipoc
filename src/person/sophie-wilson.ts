@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "sophie-wilson",
@@ -9,18 +9,7 @@ export default {
   email: "s.wilson@broadcom-cpu.test",
   phone: null,
   picture: null,
-  tags: [
-    "Computer-Science",
-    "CPU-Architecture",
-    "British",
-    "Transgender",
-    "LGBTQ",
-    "ARM",
-    "BBC-Micro",
-  ],
-  groupMemberships: [
-    "computer-pioneers",
-    "programming-pioneers",
-  ],
+  tags: ["Computer-Science", "CPU-Architecture", "British", "Transgender", "LGBTQ", "ARM", "BBC-Micro"],
+  groupMemberships: ["computer-pioneers", "programming-pioneers"],
   reference: "https://en.wikipedia.org/wiki/Sophie_Wilson",
 } satisfies Person;

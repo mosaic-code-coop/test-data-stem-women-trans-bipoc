@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "jane-goodall",
@@ -9,17 +9,8 @@ export default {
   email: "jane.goodall@janegoodall.test",
   phone: "+1-555-682-9220",
   picture: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Jane-goodall_%28cropped%29.jpg",
-  tags: [
-    "Primatology",
-    "Anthropology",
-    "Conservation",
-    "British",
-    "Field-Research",
-  ],
-  groupMemberships: [
-    "janegoodall-institute",
-    "primatology-research",
-  ],
+  tags: ["Primatology", "Anthropology", "Conservation", "British", "Field-Research"],
+  groupMemberships: ["janegoodall-institute", "primatology-research"],
   quote: "What you do makes a difference, and you have to decide what kind of difference you want to make.",
   quoteReference: "https://janegoodall.ca/what-we-do/",
 } satisfies Person;

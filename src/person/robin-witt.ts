@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "robin-witt",
@@ -8,18 +8,7 @@ export default {
   email: "robin.witt@artemis-engineers.test",
   phone: null,
   picture: null,
-  tags: [
-    "Electrical-Engineering",
-    "Aerospace-Engineering",
-    "Transgender",
-    "LGBTQ",
-    "Artemis",
-    "American",
-  ],
-  groupMemberships: [
-    "kennedy-space-center",
-    "artemis-program",
-    "northrop-grumman",
-  ],
+  tags: ["Electrical-Engineering", "Aerospace-Engineering", "Transgender", "LGBTQ", "Artemis", "American"],
+  groupMemberships: ["kennedy-space-center", "artemis-program", "northrop-grumman"],
   reference: "https://futurism.com/the-byte/nasa-engineer-quit-transgender",
 } satisfies Person;

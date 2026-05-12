@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "maria-sibylla-merian",
@@ -9,15 +9,6 @@ export default {
   email: "maria.merian@german-natural-history.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Bildnis_der_Maria_Sibylla_Merian%2C_1679.jpg",
-  tags: [
-    "Biology",
-    "Entomology",
-    "Botany",
-    "German",
-    "Scientific-Illustration",
-  ],
-  groupMemberships: [
-    "german-natural-history",
-    "entomology-research",
-  ],
+  tags: ["Biology", "Entomology", "Botany", "German", "Scientific-Illustration"],
+  groupMemberships: ["german-natural-history", "entomology-research"],
 } satisfies Person;

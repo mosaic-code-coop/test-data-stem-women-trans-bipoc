@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "wang-zhenyi",
@@ -13,15 +13,6 @@ export default {
   email: "wang.zhenyi@chinese-astronomy.test",
   phone: null,
   picture: null,
-  tags: [
-    "Astronomy",
-    "Mathematics",
-    "Celestial-Mechanics",
-    "Chinese",
-    "Qing-Dynasty",
-  ],
-  groupMemberships: [
-    "chinese-astronomy",
-    "mathematical-history",
-  ],
+  tags: ["Astronomy", "Mathematics", "Celestial-Mechanics", "Chinese", "Qing-Dynasty"],
+  groupMemberships: ["chinese-astronomy", "mathematical-history"],
 } satisfies Person;

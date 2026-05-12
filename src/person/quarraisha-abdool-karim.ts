@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "quarraisha-abdool-karim",
@@ -9,17 +9,7 @@ export default {
   email: "q.abdoolkarim@caprisa.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/9/93/Quarraisha_Abdool_Karim.jpg",
-  tags: [
-    "Epidemiology",
-    "HIV-Prevention",
-    "South-African",
-    "Infectious-Diseases",
-    "Public-Health",
-  ],
-  groupMemberships: [
-    "african-scientists",
-    "medical-researchers",
-    "caprisa",
-  ],
+  tags: ["Epidemiology", "HIV-Prevention", "South-African", "Infectious-Diseases", "Public-Health"],
+  groupMemberships: ["african-scientists", "medical-researchers", "caprisa"],
   reference: "https://www.caprisa.org/about-us/leadership/prof-quarraisha-abdool-karim",
 } satisfies Person;

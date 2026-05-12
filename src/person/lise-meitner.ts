@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "lise-meitner",
@@ -9,17 +9,8 @@ export default {
   email: "lise.meitner@nuclear-physics.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Lise_Meitner_NatGeo.jpg",
-  tags: [
-    "Physics",
-    "Nuclear-Physics",
-    "Radioactivity",
-    "Austrian-Swedish",
-    "Nuclear-Fission",
-  ],
-  groupMemberships: [
-    "nuclear-physics-research",
-    "austrian-physics",
-  ],
+  tags: ["Physics", "Nuclear-Physics", "Radioactivity", "Austrian-Swedish", "Nuclear-Fission"],
+  groupMemberships: ["nuclear-physics-research", "austrian-physics"],
   quote: "Life need not be easy, provided only that it is not empty.",
   quoteReference: "https://todayinsci.com/M/Meitner_Lise/MeitnerLise-Quotations.htm",
 } satisfies Person;

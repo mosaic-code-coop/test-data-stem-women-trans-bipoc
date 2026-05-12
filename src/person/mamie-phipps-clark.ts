@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "mamie-phipps-clark",
@@ -9,15 +9,6 @@ export default {
   email: "mamie.clark@psychology-research.test",
   phone: null,
   picture: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Mamie_Clark_1958.jpg",
-  tags: [
-    "Psychology",
-    "Social-Psychology",
-    "Education",
-    "African-American",
-    "Civil-Rights",
-  ],
-  groupMemberships: [
-    "psychology-research",
-    "education-psychology",
-  ],
+  tags: ["Psychology", "Social-Psychology", "Education", "African-American", "Civil-Rights"],
+  groupMemberships: ["psychology-research", "education-psychology"],
 } satisfies Person;

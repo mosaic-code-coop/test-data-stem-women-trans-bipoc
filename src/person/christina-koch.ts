@@ -1,4 +1,4 @@
-import type { Person } from '@mosaic-code/test-data-factory';
+import type { Person } from "@mosaic-code/test-data-factory";
 
 export default {
   id: "christina-koch",
@@ -9,17 +9,7 @@ export default {
   email: "christina.koch@nasa.test",
   phone: "+1-555-483-0000",
   picture: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Jsc2023e0016435_alt.jpg",
-  tags: [
-    "Electrical-Engineering",
-    "Aerospace-Engineering",
-    "NASA",
-    "Space-Exploration",
-    "Artemis",
-  ],
-  groupMemberships: [
-    "nasa-engineering",
-    "artemis-program",
-    "johnson-space-center",
-  ],
+  tags: ["Electrical-Engineering", "Aerospace-Engineering", "NASA", "Space-Exploration", "Artemis"],
+  groupMemberships: ["nasa-engineering", "artemis-program", "johnson-space-center"],
   reference: "https://www.nasa.gov/people/christina-koch/",
 } satisfies Person;
