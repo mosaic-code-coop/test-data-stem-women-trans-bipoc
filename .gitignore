@@ -2,3 +2,7 @@ node_modules
 dist
 *.log
 references
+src/_generated/
+src/person/.trash/
+src/group/.trash/
+src/event/.trash/

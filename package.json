@@ -5,7 +5,10 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
+    "assemble": "assemble-data-package --export-name=stemAchievementsData",
+    "prebuild": "npm run assemble",
     "build": "tsc",
+    "pretest": "npm run assemble",
     "test": "vitest run --exclude '**/image-validation.test.ts'",
     "test:watch": "vitest --exclude '**/image-validation.test.ts'",
     "test:image": "vitest run image-validation.test.ts",
@@ -13,6 +16,7 @@
     "lint:fix": "eslint src --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "pretypecheck": "npm run assemble",
     "typecheck": "tsc --noEmit",
     "dev": "tsx src/index.ts",
     "generate-diversity": "diversity-report --data ./dist/index.js --output ./DIVERSITY.md --dataset-name \"STEM Achievements Dataset\" --include-unicode-analysis",
