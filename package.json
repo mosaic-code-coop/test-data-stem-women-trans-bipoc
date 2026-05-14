@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Test data package containing achievements of women, non-binary, queer, black, indigenous and people of colour in STEM",
   "main": "dist/index.js",
   "type": "module",
