@@ -9,8 +9,8 @@ npm install @mosaic-code/stem-achievements-data @mosaic-code/test-data-factory
 ```
 
 ```typescript
-import DataFactory from '@mosaic-code/test-data-factory';
-import stemAchievementsData from '@mosaic-code/stem-achievements-data';
+import DataFactory from "@mosaic-code/test-data-factory";
+import stemAchievementsData from "@mosaic-code/stem-achievements-data";
 
 const factory = new DataFactory(stemAchievementsData);
 
@@ -18,10 +18,10 @@ const factory = new DataFactory(stemAchievementsData);
 const users = factory.getPeople(3);
 
 // A specific person by id
-const ada = factory.getPerson('ada-lovelace');
+const ada = factory.getPerson("ada-lovelace");
 
 // People tagged Mathematics
-const mathematicians = factory.getPeopleByTag('Mathematics');
+const mathematicians = factory.getPeopleByTag("Mathematics");
 ```
 
 For deterministic output across test runs, call `factory.setSeed(<number>)` first.
