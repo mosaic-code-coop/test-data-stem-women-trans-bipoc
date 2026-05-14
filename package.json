@@ -40,12 +40,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mosaic-sunrise/test-data-stem-women-trans-bipoc.git"
+    "url": "git+https://github.com/mosaic-code-coop/test-data-stem-women-trans-bipoc.git"
   },
   "bugs": {
-    "url": "https://github.com/mosaic-sunrise/test-data-stem-women-trans-bipoc/issues"
+    "url": "https://github.com/mosaic-code-coop/test-data-stem-women-trans-bipoc/issues"
   },
-  "homepage": "https://github.com/mosaic-sunrise/test-data-stem-women-trans-bipoc#readme",
+  "homepage": "https://github.com/mosaic-code-coop/test-data-stem-women-trans-bipoc#readme",
   "devDependencies": {
     "@types/node": "^20.0.0",
     "conventional-changelog-cli": "^5.0.0",

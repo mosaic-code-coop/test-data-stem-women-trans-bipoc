@@ -26,7 +26,7 @@ const mathematicians = factory.getPeopleByTag('Mathematics');
 
 For deterministic output across test runs, call `factory.setSeed(<number>)` first.
 
-See the [framework README](https://github.com/mosaic-sunrise/test-data-api#readme) for the full DataFactory API.
+See the [framework README](https://github.com/mosaic-code-coop/test-data-api#readme) for the full DataFactory API.
 
 ## Purpose
 
