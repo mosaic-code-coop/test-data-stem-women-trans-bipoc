@@ -1,5 +1,8 @@
 {
-  "name": "stem-achievements-data",
+  "name": "@mosaic-code/stem-achievements-data",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.1.0",
   "description": "Test data package containing achievements of women, non-binary, queer, black, indigenous and people of colour in STEM",
   "main": "dist/index.js",

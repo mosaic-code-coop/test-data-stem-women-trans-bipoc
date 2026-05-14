@@ -5,12 +5,12 @@ Real biographies of women, trans, non-binary, queer, Black, Indigenous, and peop
 ## Quickstart
 
 ```bash
-npm install stem-achievements-data @mosaic-code/test-data-factory
+npm install @mosaic-code/stem-achievements-data @mosaic-code/test-data-factory
 ```
 
 ```typescript
 import DataFactory from '@mosaic-code/test-data-factory';
-import stemAchievementsData from 'stem-achievements-data';
+import stemAchievementsData from '@mosaic-code/stem-achievements-data';
 
 const factory = new DataFactory(stemAchievementsData);
 
